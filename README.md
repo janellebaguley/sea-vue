@@ -1,4 +1,4 @@
-# sea
+# The Sea Goddess Grotto
 
 ## Project setup
 ```
