@@ -2,19 +2,19 @@
     <component v-bind:is="layout"></component>
 </template>
 <script>
-    import DefaultLayout from './layouts/DefaultLayout'
-    import BlankLayout from './layouts/BlankLayout'
+    import LayoutDefault from './layouts/DefaultLayout'
+    import LayoutBlank from './layouts/BlankLayout'
     export default {
         components: {
-            'layout-default': DefaultLayout,
-            'layout-blank': BlankLayout,
+            'layout-default': LayoutDefault,
+            'layout-blank': LayoutBlank,
         },
         computed: {
             layout() {
                 if (this.$route.path === '/') {
-                    return BlankLayout;
+                    return LayoutBlank;
                 } else {
-                    return DefaultLayout
+                    return LayoutDefault
                 }
             }
         }

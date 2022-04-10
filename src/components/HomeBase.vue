@@ -1,9 +1,6 @@
 <template>
   <v-card>
-    <v-row class='mx-1 text-center'>
-      <v-col>
-        <h1>San Diego's first inclusive Mermaid Performance Company. Proving anyone can achieve their dreams. Come create some magic with us!</h1>
-      </v-col>
+    <v-row>
     </v-row>
   </v-card>
 </template>

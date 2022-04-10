@@ -8,7 +8,7 @@
       color="#8627E0"
       :mini-variant.sync="mini"
       :permanent="sidebarMenu"
-      :width="270"
+      :width="280"
     >
       <v-list-item class="px-2">
         <v-list-item-avatar rounded="0">
@@ -108,7 +108,7 @@ export default {
       navLinks: [
         {
           title: 'Home',
-          link: '/'
+          link: '/home'
         },
         {
           title: 'MER-chandise',
@@ -189,7 +189,7 @@ export default {
 }
 
 .v-dialog > .v-card > .v-card__text {
-  padding: 0 24px 1px 24px !important;
+  padding: 0 20px 1px 24px !important;
 }
 
 .v-input.dg-page-size {
@@ -197,10 +197,13 @@ export default {
 }
 
 .v-main__wrap {
-  
+  width: auto;
   background-color: #4889E0 !important;
+  
 }
-
+/* .v-main {
+  padding: 0 !important;
+} */
 .v-list-item__title {
   align-self: center;
   font-size: 0.9rem !important;
@@ -276,9 +279,9 @@ h1.dashtitle {
 
 .container {
   width: 100%;
-  padding: 12px;
-  margin-right: auto;
-  margin-left: auto;
+  padding: 12px; 
+  margin-right: 200px;
+  margin-left: 200px;
 }
 
 .theme--light.v-label {
@@ -363,7 +366,7 @@ h1.dashtitle {
 
 .container .nopadd {
   padding: 0 0;
-  padding-left: 1rem;
+  /* padding-left: 1rem; */
 }
 
 footer.theme--light.v-footer {

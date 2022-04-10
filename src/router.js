@@ -1,5 +1,6 @@
 import Vue from 'vue';
 import Router from 'vue-router';
+import DefaultLayout from './layouts/DefaultLayout'
 import HomeBase from './components/HomeBase.vue'
 import ContactEmail from './components/ContactEmail.vue'
 import DocsPdf from './components/DocsPdf.vue'
@@ -31,6 +32,11 @@ export default new Router({
     routes: [
         {
             path: '/',
+            name: 'DefaultLayout',
+            component: DefaultLayout,
+        },
+        {
+            path: '/home',
             name: 'HomeBase',
             component: HomeBase,
         },
