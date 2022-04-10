@@ -2,19 +2,19 @@
     <v-card>
 <v-row>
             <v-col>
-                <h1>Policies</h1>
+                <h1>Docs</h1>
             </v-col>
         </v-row>
     </v-card>
 </template>
 <script>
     export default {
-        name: 'Policies',
+        name: 'DocsPdf',
         components: {
         },
         data() {
             return {
-                pageName: "Policies",
+                pageName: "Docs",
                 search: '',
                 loading: true,
                 // form fields

@@ -20,7 +20,7 @@
 </template>
 <script>
 export default {
-  name: "FAQ",
+  name: "FrequentlyAsked",
   components: {},
   data() {
     return {

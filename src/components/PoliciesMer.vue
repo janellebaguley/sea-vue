@@ -2,19 +2,19 @@
     <v-card>
 <v-row>
             <v-col>
-                <h1>MER-chandise</h1>
+                <h1>Policies</h1>
             </v-col>
         </v-row>
     </v-card>
 </template>
 <script>
     export default {
-        name: 'Shop',
+        name: 'PoliciesMer',
         components: {
         },
         data() {
             return {
-                pageName: "Shop",
+                pageName: "Policies",
                 search: '',
                 loading: true,
                 // form fields

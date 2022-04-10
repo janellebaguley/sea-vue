@@ -2,19 +2,19 @@
     <v-card>
 <v-row>
             <v-col>
-                <h1>Docs</h1>
+                <h1>Psychic</h1>
             </v-col>
         </v-row>
     </v-card>
 </template>
 <script>
     export default {
-        name: 'Docs',
+        name: 'PsychicMer',
         components: {
         },
         data() {
             return {
-                pageName: "Docs",
+                pageName: "Psychic",
                 search: '',
                 loading: true,
                 // form fields

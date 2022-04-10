@@ -1,25 +1,22 @@
 <template>
-  <div id="app">
-    
-  </div>
+    <component v-bind:is="layout"></component>
 </template>
-
 <script>
-
-export default {
-  name: 'App',
-  components: {
-  }
-}
+    import DefaultLayout from './layouts/DefaultLayout'
+    import BlankLayout from './layouts/BlankLayout'
+    export default {
+        components: {
+            'layout-default': DefaultLayout,
+            'layout-blank': BlankLayout,
+        },
+        computed: {
+            layout() {
+                if (this.$route.path === '/') {
+                    return BlankLayout;
+                } else {
+                    return DefaultLayout
+                }
+            }
+        }
+    }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>

@@ -1,4 +1,4 @@
-template>
+<template>
   <v-card class="mt-4 mx-4">
     <v-row class="mx-1">
       <v-col>
@@ -86,7 +86,7 @@ template>
 </template>
 <script>
 export default {
-  name: "Meet",
+  name: "MeetMer",
   components: {},
   data() {
     return {

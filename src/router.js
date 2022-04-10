@@ -1,15 +1,15 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Home from './components/Home.vue'
-import Contact from './components/Contact.vue'
-import Docs from './components/Docs.vue'
-import Events from './components/Events.vue'
-import FAQ from './components/FAQ.vue'
-import Gallery from './components/Gallery.vue'
-import Policies from './components/Policies.vue'
-import Psychic from './components/Psychic.vue'
-import Shop from './components/Shop.vue'
-import Meet from './components/Meet.vue'
+import HomeBase from './components/HomeBase.vue'
+import ContactEmail from './components/ContactEmail.vue'
+import DocsPdf from './components/DocsPdf.vue'
+import EventsPricing from './components/EventsPricing.vue'
+import FrequentlyAsked from './components/FrequentlyAsked.vue'
+import GalleryMer from './components/GalleryMer.vue'
+import PoliciesMer from './components/PoliciesMer.vue'
+import PsychicMer from './components/PsychicMer.vue'
+import ShopMer from './components/ShopMer.vue'
+import MeetMer from './components/MeetMer.vue'
 
 
 Vue.use(Router);
@@ -31,53 +31,53 @@ export default new Router({
     routes: [
         {
             path: '/',
-            name: 'Home',
-            component: Home,
+            name: 'HomeBase',
+            component: HomeBase,
         },
         {
             path: '/contact',
-            name: 'Contact',
-            component: Contact,
+            name: 'ContactEmail',
+            component: ContactEmail,
         },
         {
             path: '/docs',
-            name: 'Docs',
-            component: Docs,
+            name: 'DocsPdf',
+            component: DocsPdf,
         },
         {
             path: '/events',
-            name: 'Events',
-            component: Events,
+            name: 'EventsPricing',
+            component: EventsPricing,
         },
         {
             path: '/meet',
-            name: 'Meet',
-            component: Meet,
+            name: 'MeetMer',
+            component: MeetMer,
         },
         {
             path: '/faq',
-            name: 'FAQ',
-            component: FAQ,
+            name: 'FrequentlyAsked',
+            component: FrequentlyAsked,
         },
         {
             path: '/gallery',
-            name: 'Gallery',
-            component: Gallery,
+            name: 'GalleryMer',
+            component: GalleryMer,
         },
         {
             path: '/policies',
-            name: 'Policies',
-            component: Policies,
+            name: 'PoliciesMer',
+            component: PoliciesMer,
         },
         {
             path: '/psychic',
-            name: 'Psychic',
-            component: Psychic,
+            name: 'PsychicMer',
+            component: PsychicMer,
         },
         {
-            path: '/shop',
-            name: 'Shop',
-            component: Shop,
+            path: '/mer-chandise',
+            name: 'ShopMer',
+            component: ShopMer,
         },
     ]
 });

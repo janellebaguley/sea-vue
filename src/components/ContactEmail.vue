@@ -2,14 +2,14 @@
     <v-card>
         <v-row>
             <v-col>
-                <h1>Contact</h1>
+                <h1>ContactEmail</h1>
             </v-col>
         </v-row>
     </v-card>
 </template>
 <script>
     export default {
-        name: 'Contact',
+        name: 'ContactEmail',
         components: {
         },
         data() {

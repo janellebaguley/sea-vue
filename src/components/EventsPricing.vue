@@ -334,7 +334,7 @@
 </template>
 <script>
 export default {
-  name: "Events",
+  name: "EventsPricing",
   components: {},
   data() {
     return {

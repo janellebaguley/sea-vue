@@ -59,7 +59,7 @@
 
 <script>
 export default {
-  name: "Gallery",
+  name: "GalleryMer",
   components: {},
   data() {
     return {
