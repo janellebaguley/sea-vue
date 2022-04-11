@@ -1,5 +1,5 @@
 <template>
-  <v-card>
+  <v-card class="mx-3 mt-4">
     <!-- <v-row>
     <v-col cols='3'>
       <v-container>

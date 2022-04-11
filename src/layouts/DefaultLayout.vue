@@ -9,6 +9,7 @@
       :mini-variant.sync="mini"
       :permanent="sidebarMenu"
       :width="280"
+      
     >
       <v-list-item class="px-2">
         <v-list-item-avatar rounded="0">
@@ -82,7 +83,7 @@
       </v-list>
     </v-navigation-drawer>
     <v-main>
-      <v-container id="con">
+      <v-container id="con" >
         <v-row class="fill-height">
           <v-col>
             <transition name="fade">
@@ -197,13 +198,15 @@ export default {
 }
 
 .v-main__wrap {
-  width: auto;
+  width: 100%;
   background-color: #4889E0 !important;
   
 }
-/* .v-main {
-  padding: 0 !important;
-} */
+.v-main {
+  width: 100%;
+  background-color: #4889E0 !important;
+}
+
 .v-list-item__title {
   align-self: center;
   font-size: 0.9rem !important;

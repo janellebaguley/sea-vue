@@ -1,5 +1,5 @@
 <template>
-  <v-card>
+  <v-card class="mx-3 mt-4">
     <v-row class='mx-1'>
       <v-col>
         <h1>FAQ</h1>

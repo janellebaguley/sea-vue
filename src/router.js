@@ -81,7 +81,7 @@ export default new Router({
             component: PsychicMer,
         },
         {
-            path: '/mer-chandise',
+            path: '/shop',
             name: 'ShopMer',
             component: ShopMer,
         },
