@@ -23,7 +23,7 @@
           <h3 style="color:#ffffff;">The Sea Goddess Grotto</h3>
         </v-list-item-title>
         <v-btn icon @click.stop="mini = !mini">
-          <v-icon color="#ffffff">mdi-chevron-left</v-icon>
+          <v-icon color="white">mdi-chevron-left</v-icon>
         </v-btn>
       </v-list-item>
       <v-divider></v-divider>
@@ -243,7 +243,7 @@ h1.dashtitle {
 }
 
 .theme--light.v-data-table .v-data-table-header th.sortable.active .v-data-table-header__icon {
-  color: #8627E0 !important;
+  color: white !important;
 }
 
 .v-navigation-drawer .v-list-item--active.v-list-item.v-list-item--link.theme--dark {
@@ -269,7 +269,7 @@ h1.dashtitle {
 }
 
 .v-list-item__icon.v-list-group__header__append-icon {
-  color: #181818 !important;
+  color: white !important;
 }
 
 .v-list-item.v-list-group__header {
