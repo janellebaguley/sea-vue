@@ -2,7 +2,7 @@
   <v-card class="mx-3 mt-4">
     <v-row class="mx-3">
       <v-col>
-        <h1>MER-chandise</h1>
+        <h1 class='primary--text'>MER-chandise</h1>
       </v-col>
     </v-row>
     <v-card class="ma-4">
@@ -20,27 +20,34 @@
         <v-col>
           <v-expansion-panels color="white" dense flat>
             <v-expansion-panel>
-              <v-expansion-panel-header color="secondary" class="white--text ma-0 pa-0" dense>
+              <v-expansion-panel-header
+                color="secondary"
+                class="white--text ma-0 pa-0"
+                dense
+              >
                 <template v-slot:default="{ open }">
-                  <v-row class='mx-1 mt-1'>
+                  <v-row class="mx-1 mt-1">
                     <v-col>
-                        <h3 class="white--text">Description</h3>
+                      <h3 class="white--text">Description</h3>
                     </v-col>
-                      <v-col>
-                          <v-card-actions style='float:right;'>
-                              <span v-if="!open" key="0" class="overline text--disabled"
-                        ><h4 class='white--text'>Show Details</h4></span
-                      >
-                      <span v-else key="1" class="overline text--disabled"
-                        ><h4 class='white--text'>Hide Details</h4></span
-                      >
-                          </v-card-actions>
-                      </v-col>
+                    <v-col>
+                      <v-card-actions style="float: right">
+                        <span
+                          v-if="!open"
+                          key="0"
+                          class="overline text--disabled"
+                          ><h4 class="white--text">Show Details</h4></span
+                        >
+                        <span v-else key="1" class="overline text--disabled"
+                          ><h4 class="white--text">Hide Details</h4></span
+                        >
+                      </v-card-actions>
+                    </v-col>
                   </v-row>
                 </template>
               </v-expansion-panel-header>
               <v-expansion-panel-content>
-                <v-row class="mx-3 mt-2">
+                <v-row class="mx-1 mt-2">
                   <v-col>
                     <p>
                       These gorgeous custom mermaid skirts will make you look
@@ -62,32 +69,17 @@
                       model is 5’8” and the skirt is 43” in length but can be
                       shortened upon request. All our skirts come with a
                       coordinating mask or pouch.
-                    </p>
-                  </v-col>
-                </v-row>
-                <v-row class="mx-3">
-                  <v-col>
-                    <p>
+                   <br/><br/>
                       Want something in a different fabric or multiple colors or
                       need a custom size? We can do that too, please contact us
                       for custom inquiries!
-                    </p>
-                  </v-col>
-                </v-row>
-                <v-row class="mx-3">
-                  <v-col>
-                    <p>
+                    <br/><br/>
                       Upon check out please give us your waist measurement,
                       length from natural waist to floor, mask/pouch preference,
                       and color preference. We will contact you with the
                       available spandex colors that match your preferences
                       before starting your creation.
-                    </p>
-                  </v-col>
-                </v-row>
-                <v-row class="mx-3">
-                  <v-col>
-                    <p>
+                   <br/><br/>
                       Please note that these are custom crafted and ordered.
                       Production time can take up to 4 weeks (but we always try
                       to get them done quicker!).
@@ -103,10 +95,10 @@
     <v-card class="ma-4">
       <v-row class="mx-3">
         <v-col>
-          <h2>Mini-Goddess Skirt Starting at $150</h2>
+          <h2 class="primary--text">Mini-Goddess Skirt Starting at $150</h2>
         </v-col>
       </v-row>
-      <v-row class='mx-3'>
+      <v-row class="mx-3">
         <v-col>
           <img alt="skirt" />
         </v-col>
@@ -115,27 +107,34 @@
         <v-col>
           <v-expansion-panels flat dense>
             <v-expansion-panel>
-              <v-expansion-panel-header color="secondary" class="white--text ma-0 pa-0" dense>
+              <v-expansion-panel-header
+                color="secondary"
+                class="white--text ma-0 pa-0"
+                dense
+              >
                 <template v-slot:default="{ open }">
-                  <v-row class='mx-1 mt-1'>
+                  <v-row class="mx-1 mt-1">
                     <v-col>
-                        <h3 class="white--text">Description</h3>
+                      <h3 class="white--text">Description</h3>
                     </v-col>
-                      <v-col>
-                          <v-card-actions style='float:right;'>
-                              <span v-if="!open" key="0" class="overline text--disabled"
-                        ><h4 class='white--text'>Show Details</h4></span
-                      >
-                      <span v-else key="1" class="overline text--disabled"
-                        ><h4 class='white--text'>Hide Details</h4></span
-                      >
-                          </v-card-actions>
-                      </v-col>
+                    <v-col>
+                      <v-card-actions style="float: right">
+                        <span
+                          v-if="!open"
+                          key="0"
+                          class="overline text--disabled"
+                          ><h4 class="white--text">Show Details</h4></span
+                        >
+                        <span v-else key="1" class="overline text--disabled"
+                          ><h4 class="white--text">Hide Details</h4></span
+                        >
+                      </v-card-actions>
+                    </v-col>
                   </v-row>
                 </template>
               </v-expansion-panel-header>
               <v-expansion-panel-content>
-                <v-row class="mx-3">
+                <v-row class="mx-1 mt-2">
                   <v-col>
                     <p>
                       Our Mini-Goddess skirts are knee length circle skirts that
@@ -154,23 +153,13 @@
                       custom prints, or sizes over a US 28 please contact us for
                       more information before ordering as they may incur
                       additional costs.
-                    </p>
-                  </v-col>
-                </v-row>
-                <v-row class="mx-3">
-                  <v-col>
-                    <p>
+                    <br/><br/>
                       Upon check out please give us your waist measurement,
                       length from natural waist to floor, mask/pouch preference,
                       and color preference. We will contact you with the
                       available spandex colors that match your preferences
                       before starting your creation.
-                    </p>
-                  </v-col>
-                </v-row>
-                <v-row class="mx-3">
-                  <v-col>
-                    <p>
+                    <br/><br/>
                       Please note that these are custom crafted and ordered.
                       Production time can take up to 3 weeks (but we always try
                       to get them done quicker!).
@@ -183,79 +172,253 @@
         </v-col>
       </v-row>
     </v-card>
-    <v-row class="mx-3">
-      <v-col>
-        <h2>Custom Kraken Resin Necklaces Starting at $75</h2>
-      </v-col>
-    </v-row>
-    <v-row class="mx-3">
-      <v-col>
-        <img alt="Kraken" />
-      </v-col>
-    </v-row>
-    <v-row class="mx-3">
-      <v-col>
-        <p>
-          Handmade by Calypso herself these necklaces are imbued with mermaid
-          magic and made with real crystals, shells, and pearls. Each kraken is
-          a unique resin pour in your choice of colors and can be made with
-          color shifting pigments or matte pigments. Glitter added at no extra
-          charge. To be ocean friendly all glitter is completely encapsulated
-          inside the resin. We only use hypoallergenic silver plated findings.
-          We will match crystals and beads to your specified colors. The kraken
-          will also be adorned with a few small crystals and beads to match your
-          necklace.
-        </p>
-      </v-col>
-    </v-row>
-    <v-row class="mx-3">
-      <v-col>
-        <p>
-          Please note that some crystals may be unavailable or incur an
-          additional fee if they are extremely rare or difficult to find. If you
-          have a specific crystal, shell, or bead that must be included in the
-          design please reach out to us before ordering to ensure we have it
-          available or can obtain it for you and that it will work with your
-          design! Some crystals are toxic in water or are water soluble or may
-          incur an additional fee. Each kraken necklace also comes with a
-          surprise coordinating hair comb or clip!
-        </p>
-      </v-col>
-    </v-row>
-    <v-row class="mx-3">
-      <v-col>
-        <p>
-          Upon check out please specify preferred colors, crystals, and glitter.
-          Please note that some crystals may be unavailable or rare, but we will
-          do our best to match them as best we can! If you have images of your
-          tail, costume, etc. please email them to us so we can use them for
-          reference and color match.
-        </p>
-      </v-col>
-    </v-row>
-    <v-row class="mx-3">
-      <v-col>
-        <p>
-          Please note that these are custom crafted and ordered. Production time
-          can take up to 2 weeks (but we always try to get them done quicker!).
-        </p>
-      </v-col>
-    </v-row>
-    <v-row class="mx-3">
-      <v-col>
-        <h2>Sea Goddess Purses (Standard Size)</h2>
-      </v-col>
-    </v-row>
-    <v-row class="mx-3">
-      <v-col>
-        <img alt="Standard Purse" />
-      </v-col>
-    </v-row>
-    <v-row class="mx-3">
-      <v-col>
-        <p></p>
-      </v-col>
-    </v-row>
+    <v-card class="ma-4">
+      <v-row class="mx-3">
+        <v-col>
+          <h2 class="primary--text">
+            Custom Kraken Resin Necklaces Starting at $75
+          </h2>
+        </v-col>
+      </v-row>
+      <v-row class="mx-3 mb-2">
+        <v-col>
+          <img alt="Kraken" />
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col>
+          <v-expansion-panels flat dense>
+            <v-expansion-panel>
+              <v-expansion-panel-header
+                color="secondary"
+                class="white--text ma-0 pa-0"
+                dense
+              >
+                <template v-slot:default="{ open }">
+                  <v-row class="mx-1 mt-1">
+                    <v-col>
+                      <h3 class="white--text">Description</h3>
+                    </v-col>
+                    <v-col>
+                      <v-card-actions style="float: right">
+                        <span
+                          v-if="!open"
+                          key="0"
+                          class="overline text--disabled"
+                          ><h4 class="white--text">Show Details</h4></span
+                        >
+                        <span v-else key="1" class="overline text--disabled"
+                          ><h4 class="white--text">Hide Details</h4></span
+                        >
+                      </v-card-actions>
+                    </v-col>
+                  </v-row>
+                </template>
+              </v-expansion-panel-header>
+              <v-expansion-panel-content>
+                <v-row class="mx-1 mt-2">
+                  <v-col>
+                    <p>
+                      Handmade by Calypso herself these necklaces are imbued
+                      with mermaid magic and made with real crystals, shells,
+                      and pearls. Each kraken is a unique resin pour in your
+                      choice of colors and can be made with color shifting
+                      pigments or matte pigments. Glitter added at no extra
+                      charge. To be ocean friendly all glitter is completely
+                      encapsulated inside the resin. We only use hypoallergenic
+                      silver plated findings. We will match crystals and beads
+                      to your specified colors. The kraken will also be adorned
+                      with a few small crystals and beads to match your
+                      necklace.
+                    <br/><br/>
+                      Please note that some crystals may be unavailable or incur
+                      an additional fee if they are extremely rare or difficult
+                      to find. If you have a specific crystal, shell, or bead
+                      that must be included in the design please reach out to us
+                      before ordering to ensure we have it available or can
+                      obtain it for you and that it will work with your design!
+                      Some crystals are toxic in water or are water soluble or
+                      may incur an additional fee. Each kraken necklace also
+                      comes with a surprise coordinating hair comb or clip!
+                    <br/><br/>
+                      Upon check out please specify preferred colors, crystals,
+                      and glitter. Please note that some crystals may be
+                      unavailable or rare, but we will do our best to match them
+                      as best we can! If you have images of your tail, costume,
+                      etc. please email them to us so we can use them for
+                      reference and color match.
+                    <br/><br/>
+                      Please note that these are custom crafted and ordered.
+                      Production time can take up to 2 weeks (but we always try
+                      to get them done quicker!).
+                    </p>
+                  </v-col>
+                </v-row>
+              </v-expansion-panel-content>
+            </v-expansion-panel>
+          </v-expansion-panels>
+        </v-col>
+      </v-row>
+    </v-card>
+    <v-card class="ma-4">
+      <v-row class="mx-3">
+        <v-col>
+          <h2 class="primary--text">Sea Goddess Purses (Standard Size)</h2>
+        </v-col>
+      </v-row>
+      <v-row class="mx-3 mb-2">
+        <v-col>
+          <img alt="Standard Purse" />
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col>
+          <v-expansion-panels flat dense>
+            <v-expansion-panel>
+              <v-expansion-panel-header
+                color="secondary"
+                class="white--text ma-0 pa-0"
+                dense
+              >
+                <template v-slot:default="{ open }">
+                  <v-row class="mx-1 mt-1">
+                    <v-col>
+                      <h3 class="white--text">Description</h3>
+                    </v-col>
+                    <v-col>
+                      <v-card-actions style="float: right">
+                        <span
+                          v-if="!open"
+                          key="0"
+                          class="overline text--disabled"
+                          ><h4 class="white--text">Show Details</h4></span
+                        >
+                        <span v-else key="1" class="overline text--disabled"
+                          ><h4 class="white--text">Hide Details</h4></span
+                        >
+                      </v-card-actions>
+                    </v-col>
+                  </v-row>
+                </template>
+              </v-expansion-panel-header>
+              <v-expansion-panel-content>
+                <v-row class="mx-1 mt-2">
+                  <v-col>
+                    <p></p>
+                  </v-col>
+                </v-row>
+              </v-expansion-panel-content>
+            </v-expansion-panel>
+          </v-expansion-panels>
+        </v-col>
+      </v-row>
+    </v-card>
+     <v-card class="ma-4">
+      <v-row class="mx-3">
+        <v-col>
+          <h2 class="primary--text">Sea Goddess Small Purse</h2>
+        </v-col>
+      </v-row>
+      <v-row class="mx-3 mb-2">
+        <v-col>
+          <img alt="Standard Purse" />
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col>
+          <v-expansion-panels flat dense>
+            <v-expansion-panel>
+              <v-expansion-panel-header
+                color="secondary"
+                class="white--text ma-0 pa-0"
+                dense
+              >
+                <template v-slot:default="{ open }">
+                  <v-row class="mx-1 mt-1">
+                    <v-col>
+                      <h3 class="white--text">Description</h3>
+                    </v-col>
+                    <v-col>
+                      <v-card-actions style="float: right">
+                        <span
+                          v-if="!open"
+                          key="0"
+                          class="overline text--disabled"
+                          ><h4 class="white--text">Show Details</h4></span
+                        >
+                        <span v-else key="1" class="overline text--disabled"
+                          ><h4 class="white--text">Hide Details</h4></span
+                        >
+                      </v-card-actions>
+                    </v-col>
+                  </v-row>
+                </template>
+              </v-expansion-panel-header>
+              <v-expansion-panel-content>
+                <v-row class="mx-1 mt-2">
+                  <v-col>
+                    <p></p>
+                  </v-col>
+                </v-row>
+              </v-expansion-panel-content>
+            </v-expansion-panel>
+          </v-expansion-panels>
+        </v-col>
+      </v-row>
+    </v-card>
+     <v-card class="ma-4">
+      <v-row class="mx-3">
+        <v-col>
+          <h2 class="primary--text">Sea Goddess Change Purse</h2>
+        </v-col>
+      </v-row>
+      <v-row class="mx-3 mb-2">
+        <v-col>
+          <img alt="Standard Purse" />
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col>
+          <v-expansion-panels flat dense>
+            <v-expansion-panel>
+              <v-expansion-panel-header
+                color="secondary"
+                class="white--text ma-0 pa-0"
+                dense
+              >
+                <template v-slot:default="{ open }">
+                  <v-row class="mx-1 mt-1">
+                    <v-col>
+                      <h3 class="white--text">Description</h3>
+                    </v-col>
+                    <v-col>
+                      <v-card-actions style="float: right">
+                        <span
+                          v-if="!open"
+                          key="0"
+                          class="overline text--disabled"
+                          ><h4 class="white--text">Show Details</h4></span
+                        >
+                        <span v-else key="1" class="overline text--disabled"
+                          ><h4 class="white--text">Hide Details</h4></span
+                        >
+                      </v-card-actions>
+                    </v-col>
+                  </v-row>
+                </template>
+              </v-expansion-panel-header>
+              <v-expansion-panel-content>
+                <v-row class="mx-1 mt-2">
+                  <v-col>
+                    <p></p>
+                  </v-col>
+                </v-row>
+              </v-expansion-panel-content>
+            </v-expansion-panel>
+          </v-expansion-panels>
+        </v-col>
+      </v-row>
+    </v-card>
     <v-row class="mx-3">
       <v-col>
         <b
