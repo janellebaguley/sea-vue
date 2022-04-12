@@ -1,5 +1,5 @@
 <template>
-  <v-card class="mx-3 mt-4">
+  <v-card class="mx-3 my-4">
     <v-row class="mx-3">
       <v-col>
         <h1 class='primary--text'>MER-chandise</h1>
@@ -21,7 +21,7 @@
           <v-expansion-panels color="white" dense flat>
             <v-expansion-panel>
               <v-expansion-panel-header
-                color="secondary"
+                color="#EB5998"
                 class="white--text ma-0 pa-0"
                 dense
               >
@@ -108,7 +108,7 @@
           <v-expansion-panels flat dense>
             <v-expansion-panel>
               <v-expansion-panel-header
-                color="secondary"
+                color="#EB5998"
                 class="white--text ma-0 pa-0"
                 dense
               >
@@ -190,7 +190,7 @@
           <v-expansion-panels flat dense>
             <v-expansion-panel>
               <v-expansion-panel-header
-                color="secondary"
+                color="#EB5998"
                 class="white--text ma-0 pa-0"
                 dense
               >
@@ -276,7 +276,7 @@
           <v-expansion-panels flat dense>
             <v-expansion-panel>
               <v-expansion-panel-header
-                color="secondary"
+                color="#EB5998"
                 class="white--text ma-0 pa-0"
                 dense
               >
@@ -329,7 +329,7 @@
           <v-expansion-panels flat dense>
             <v-expansion-panel>
               <v-expansion-panel-header
-                color="secondary"
+                color="#EB5998"
                 class="white--text ma-0 pa-0"
                 dense
               >
@@ -382,7 +382,7 @@
           <v-expansion-panels flat dense>
             <v-expansion-panel>
               <v-expansion-panel-header
-                color="secondary"
+                color="#EB5998"
                 class="white--text ma-0 pa-0"
                 dense
               >

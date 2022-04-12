@@ -1,11 +1,11 @@
 <template>
-  <v-card class="mx-3 mt-4">
+  <v-card class="mx-3 my-4">
     <v-row class="mx-1">
       <v-col>
-        <h1>Performances and Events</h1>
+        <h1 class="primary--text">Performances and Events</h1>
       </v-col>
     </v-row>
-    <v-row class="mx-3 text-center">
+    <v-row class="mx-3">
       <v-col>
         <h3>
           We love creating unique magical events custom tailored to your wishes!
@@ -16,7 +16,7 @@
     </v-row>
     <v-row class="mx-2">
       <v-col>
-        <h2>Parties and Events</h2>
+        <h2 class="primary--text">Parties and Events</h2>
       </v-col>
     </v-row>
     <v-row class="mx-2">
@@ -40,65 +40,101 @@
         </p>
       </v-col>
     </v-row>
-    <v-row class="mx-2">
+    <v-row class="mx-1">
       <v-col>
-        <h2>Party and Eent Activities Included</h2>
+        <v-expansion-panels>
+          <v-expansion-panel>
+            <v-expansion-panel-header
+              color="#EB5998"
+              class="white--text ma-0 pa-0"
+              dense
+            >
+              <template v-slot:default="{ open }">
+                <v-row class="mx-1 mt-1">
+                  <v-col>
+                    <h3 class="white--text">
+                      Party and Event Activities Included
+                    </h3>
+                  </v-col>
+                  <v-col>
+                    <v-card-actions style="float: right">
+                      <span v-if="!open" key="0" class="overline text--disabled"
+                        ><h4 class="white--text">Show Details</h4></span
+                      >
+                      <span v-else key="1" class="overline text--disabled"
+                        ><h4 class="white--text">Hide Details</h4></span
+                      >
+                    </v-card-actions>
+                  </v-col>
+                </v-row>
+              </template>
+            </v-expansion-panel-header>
+            <v-expansion-panel-content>
+              <v-row class="mx-1 my-2">
+                <v-col>
+                  <h3>
+                    (Please note that not all activities can be done in 2 hours)
+                  </h3>
+                </v-col>
+              </v-row>
+              <v-row class="mx-1 mt-2">
+                <v-col>
+                  <ol>
+                    <li>
+                      Mermaid Meet and Greet: Calypso will talk with your guests
+                      about mermaid life and answer questions.
+                    </li>
+                    <li>Photography sessions (photographer not included)</li>
+                    <li>
+                      Water activities and games such as Mermaid Polo or
+                      Treasure Diving
+                    </li>
+                    <li>
+                      Swimming Performances: Calypso will delight your guests
+                      with tail flips, underwater tricks and dance, and more!
+                    </li>
+                    <li>
+                      Dry land games such as Mermaid Says, Mermaid Scavenger
+                      Hunt, Octopus Octopus Squid!, Mermaid May I?, and
+                      Shellphone
+                    </li>
+                    <li>Mermaid Story Time with Puppets</li>
+                    <li>
+                      Ocean Conservation Education: Calypso will prepare a brief
+                      lesson in how to protect the oceans and what you can do to
+                      help!
+                    </li>
+                    <li>
+                      Inclusive Education: Calypso will teach your guests about
+                      the importance of inclusivity and how we’re all different,
+                      but still magical!
+                    </li>
+                    <li>Sea Shanty Sing Along</li>
+                    <li>
+                      Mermaid Princess Coronation for Guest of Honor: The
+                      handmade gift Calypso brings will be a mermaid crown if
+                      this activity is chosen.
+                    </li>
+                    <li>
+                      Autographs (Prints of Calypso can be added for a nominal
+                      additional fee, or she can sign invitations, cards, etc.)
+                    </li>
+                    <li>
+                      Cake/Happy Birthday Sing Along/Present Time: Calypso will
+                      initiate that it’s cake/present time and join in on the
+                      fun with singing! (Cake/gifts not included.)
+                    </li>
+                  </ol>
+                </v-col>
+              </v-row>
+            </v-expansion-panel-content>
+          </v-expansion-panel>
+        </v-expansion-panels>
       </v-col>
     </v-row>
     <v-row class="mx-2">
       <v-col>
-        <h3>(Please note that not all activities can be done in 2 hours)</h3>
-      </v-col>
-    </v-row>
-    <v-row class="mx-4">
-      <v-col>
-        <ol>
-          <li>
-            Mermaid Meet and Greet: Calypso will talk with your guests about
-            mermaid life and answer questions.
-          </li>
-          <li>Photography sessions (photographer not included)</li>
-          <li>
-            Water activities and games such as Mermaid Polo or Treasure Diving
-          </li>
-          <li>
-            Swimming Performances: Calypso will delight your guests with tail
-            flips, underwater tricks and dance, and more!
-          </li>
-          <li>
-            Dry land games such as Mermaid Says, Mermaid Scavenger Hunt, Octopus
-            Octopus Squid!, Mermaid May I?, and Shellphone
-          </li>
-          <li>Mermaid Story Time with Puppets</li>
-          <li>
-            Ocean Conservation Education: Calypso will prepare a brief lesson in
-            how to protect the oceans and what you can do to help!
-          </li>
-          <li>
-            Inclusive Education: Calypso will teach your guests about the
-            importance of inclusivity and how we’re all different, but still
-            magical!
-          </li>
-          <li>Sea Shanty Sing Along</li>
-          <li>
-            Mermaid Princess Coronation for Guest of Honor: The handmade gift
-            Calypso brings will be a mermaid crown if this activity is chosen.
-          </li>
-          <li>
-            Autographs (Prints of Calypso can be added for a nominal additional
-            fee, or she can sign invitations, cards, etc.)
-          </li>
-          <li>
-            Cake/Happy Birthday Sing Along/Present Time: Calypso will initiate
-            that it’s cake/present time and join in on the fun with singing!
-            (Cake/gifts not included.)
-          </li>
-        </ol>
-      </v-col>
-    </v-row>
-    <v-row class="mx-2">
-      <v-col>
-        <h2>Private Mermaid Appearances</h2>
+        <h2 class="primary--text">Private Mermaid Appearances</h2>
       </v-col>
     </v-row>
     <v-row class="mx-2">
@@ -130,7 +166,7 @@
     </v-row>
     <v-row class="mx-2">
       <v-col>
-        <h2>Mystical Mermaid Adult Events and Parties</h2>
+        <h2 class="primary--text">Mystical Mermaid Adult Events and Parties</h2>
       </v-col>
     </v-row>
     <v-row class="mx-2">
@@ -154,46 +190,77 @@
         </p>
       </v-col>
     </v-row>
-    <v-row class="mx-2">
+    <v-row class="mx-1">
       <v-col>
-        <h3>Included Activities</h3>
-      </v-col>
-    </v-row>
-    <v-row class="mx-4">
-      <v-col>
-        <ol>
-          <li>
-            Mermaid Meet and Greet: Calypso will talk with your guests about
-            mermaid life, being a professional mermaid, and answer questions.
-          </li>
-          <li>Photography Sessions (photographer not included)</li>
-          <li>Swimming Performances</li>
-          <li>
-            Diving for Treasures: Calypso will sink your included party gifts to
-            the pool bottom and retrieve them for your guests!
-          </li>
-          <li>
-            Sea Shanty Sing Along: Calypso will ensnare your guests with singing
-            and drinking songs.
-          </li>
-          <li>
-            Drinking Games: Calypso will initiate mermaid themed drinking games.
-            (Please note Calypso does not drink at events, but is happy to
-            initiate and play along! Drinks not included.)
-          </li>
-          <li>
-            Grown Up Mermaid Stories: Calypso will enchant your guests with
-            tales of the deep. She will tell mermaid stories and folklore with a
-            siren twist. She will tell tales of sea witches, drowned sailors,
-            and the monsters of the deep.
-          </li>
-          <li>
-            Ocean Conservation or Inclusivity and Diversity Education: A more
-            grown up approach and discussion about inclusivity and diversity or
-            ocean conservation. Calypso will provide a brief presentation or be
-            available for Q&A’s.
-          </li>
-        </ol>
+        <v-expansion-panels>
+          <v-expansion-panel>
+            <v-expansion-panel-header
+              color="#EB5998"
+              class="white--text ma-0 pa-0"
+              dense
+            >
+              <template v-slot:default="{ open }">
+                <v-row class="mx-1 mt-1">
+                  <v-col>
+                    <h3 class="white--text">Included Activities</h3>
+                  </v-col>
+                  <v-col>
+                    <v-card-actions style="float: right">
+                      <span v-if="!open" key="0" class="overline text--disabled"
+                        ><h4 class="white--text">Show Details</h4></span
+                      >
+                      <span v-else key="1" class="overline text--disabled"
+                        ><h4 class="white--text">Hide Details</h4></span
+                      >
+                    </v-card-actions>
+                  </v-col>
+                </v-row>
+              </template>
+            </v-expansion-panel-header>
+            <v-expansion-panel-content>
+              <v-row class="mx-1 my-2">
+                <v-col>
+                  <ol>
+                    <li>
+                      Mermaid Meet and Greet: Calypso will talk with your guests
+                      about mermaid life, being a professional mermaid, and
+                      answer questions.
+                    </li>
+                    <li>Photography Sessions (photographer not included)</li>
+                    <li>Swimming Performances</li>
+                    <li>
+                      Diving for Treasures: Calypso will sink your included
+                      party gifts to the pool bottom and retrieve them for your
+                      guests!
+                    </li>
+                    <li>
+                      Sea Shanty Sing Along: Calypso will ensnare your guests
+                      with singing and drinking songs.
+                    </li>
+                    <li>
+                      Drinking Games: Calypso will initiate mermaid themed
+                      drinking games. (Please note Calypso does not drink at
+                      events, but is happy to initiate and play along! Drinks
+                      not included.)
+                    </li>
+                    <li>
+                      Grown Up Mermaid Stories: Calypso will enchant your guests
+                      with tales of the deep. She will tell mermaid stories and
+                      folklore with a siren twist. She will tell tales of sea
+                      witches, drowned sailors, and the monsters of the deep.
+                    </li>
+                    <li>
+                      Ocean Conservation or Inclusivity and Diversity Education:
+                      A more grown up approach and discussion about inclusivity
+                      and diversity or ocean conservation. Calypso will provide
+                      a brief presentation or be available for Q&A’s.
+                    </li>
+                  </ol>
+                </v-col>
+              </v-row>
+            </v-expansion-panel-content>
+          </v-expansion-panel>
+        </v-expansion-panels>
       </v-col>
     </v-row>
     <v-row class="mx-4">
@@ -207,12 +274,35 @@
         >
       </v-col>
     </v-row>
-    <v-row class="mx-2">
+    <v-row class="mx-1">
       <v-col>
-        <h2>Ala Carte Add Ons to Any Booking</h2>
-      </v-col>
-    </v-row>
-    <v-row class="mx-4">
+        <v-expansion-panels>
+          <v-expansion-panel>
+             <v-expansion-panel-header
+              color="#EB5998"
+              class="white--text ma-0 pa-0"
+              dense
+            >
+              <template v-slot:default="{ open }">
+                <v-row class="mx-1 mt-1">
+                  <v-col>
+                    <h3 class="white--text">Ala Carte Add Ons to Any Booking</h3>
+                  </v-col>
+                  <v-col>
+                    <v-card-actions style="float: right">
+                      <span v-if="!open" key="0" class="overline text--disabled"
+                        ><h4 class="white--text">Show Details</h4></span
+                      >
+                      <span v-else key="1" class="overline text--disabled"
+                        ><h4 class="white--text">Hide Details</h4></span
+                      >
+                    </v-card-actions>
+                  </v-col>
+                </v-row>
+              </template>
+            </v-expansion-panel-header>
+            <v-expansion-panel-content>
+    <v-row class="mx-1 my-2">
       <v-col>
         <ol>
           <li>Additional appearance hours: $80 per hour</li>
@@ -291,6 +381,11 @@
         </ol>
       </v-col>
     </v-row>
+            </v-expansion-panel-content>
+          </v-expansion-panel>
+        </v-expansion-panels>
+      </v-col>
+    </v-row>
     <v-row class="mx-4">
       <v-col>
         <p>
@@ -301,33 +396,55 @@
       </v-col>
     </v-row>
     <v-row class="mx-4">
-        <v-col>
-            <p>*Please note for events outside of San Diego County additional travel fees may apply.</p>
-        </v-col>
+      <v-col>
+        <p>
+          *Please note for events outside of San Diego County additional travel
+          fees may apply.
+        </p>
+      </v-col>
     </v-row>
-    <v-row class='mx-2'>
-        <v-col>
-            <h3>For all appearances and events</h3>
-        </v-col>
-    </v-row>
-    <v-row class="mx-4">
-        <v-col>
-            <p>50% non-refundable deposit is required to book your appearance or event. The remainder of the balance is due 24 hours prior to the performance and can be paid through Venmo. Any cancellations must be made at least 24 hours in advance in order to be able to apply your balance to a future event.</p>
-        </v-col>
-    </v-row>
-    <v-row class="mx-4">
-        <v-col>
-            <p>Please note that the mermaid and mertender will need approximately 20 minutes (included in your booking) for set up/take down and mermaid transformations either AWAY from your guests or before and after your event to maintain the magic of the performance.</p>
-        </v-col>
-    </v-row>
-    <v-row class="mx-4">
-        <v-col>
-            <b>The mermaid and mertender are not responsible for the care of children, especially while swimming, and a parent or guardian must be present at all times. When swimming or at the beach parents/guardians must be able to assist children as needed.</b>
-        </v-col>
+    <v-row class="mx-2">
+      <v-col>
+        <h3 class="primary--text">For all appearances and events</h3>
+      </v-col>
     </v-row>
     <v-row class="mx-4">
       <v-col>
-        <p>All bookings will require a signed policies and procedures form and a liability release.</p>
+        <p>
+          50% non-refundable deposit is required to book your appearance or
+          event. The remainder of the balance is due 24 hours prior to the
+          performance and can be paid through Venmo. Any cancellations must be
+          made at least 24 hours in advance in order to be able to apply your
+          balance to a future event.
+        </p>
+      </v-col>
+    </v-row>
+    <v-row class="mx-4">
+      <v-col>
+        <p>
+          Please note that the mermaid and mertender will need approximately 20
+          minutes (included in your booking) for set up/take down and mermaid
+          transformations either AWAY from your guests or before and after your
+          event to maintain the magic of the performance.
+        </p>
+      </v-col>
+    </v-row>
+    <v-row class="mx-4">
+      <v-col>
+        <b
+          >The mermaid and mertender are not responsible for the care of
+          children, especially while swimming, and a parent or guardian must be
+          present at all times. When swimming or at the beach parents/guardians
+          must be able to assist children as needed.</b
+        >
+      </v-col>
+    </v-row>
+    <v-row class="mx-4">
+      <v-col>
+        <p>
+          All bookings will require a signed policies and procedures form and a
+          liability release.
+        </p>
       </v-col>
     </v-row>
   </v-card>
