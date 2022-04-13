@@ -12,13 +12,22 @@
             What is a professional mermaid and how do I become one? Professional mermaids are licensed businesses that operate like any other party or event company. We specialize in creating unique magical experiences for our customers. It’s a real full time job! If you are interested in becoming a professional yourself, please become one of our Patrons. We offer lots of tutorials and Q&amp;A sessions to Patrons to help them on their journeys.
             <br/><br/>
             Can you really swim in that tail? Yes! Calypso is fully trained in the use of her tail (and other costuming) with over a decade of professional mermaid experience. She is able to glide through the water just like a fish and can freedive up to 15 feet.
-            <br/><br/>Where do I get a mermaid tail? We offer custom tails via Contact only, or there are lots of online resources for purchasing a tail.
+            <br/><br/>Where do I get a mermaid tail? We offer custom tails via <v-btn color='secondary' @click='contact' text dense>Contact</v-btn> only, or there are lots of online resources for purchasing a tail.
+             <br/><br/>
+             You mentioned that you're disabled. What's your disability and does it affect your ability to perform? Calypso/Lei Loni is a Type 1 Diabetic with Degenerative Disc Disease and some neurological issues we're looking into. However, her disability does not affect her ability to perform and provide a wonderful experience for you and your guests. Since most events are fairly short in nature (rarely being longer than a half day) I can usually tend to my medical needs and after, so it won't interfere with your mermaid magic. There is a rare chance that she may have an emergency, but in over a decade of performing this has not happened.
+             <br/><br/>
+             Does your service dog come with you to events? Typically, no. For private events we bring a 'service human' who is trained in meeting medical needs, should one arise. If you are interested in having the service dog attend for visibility purposes(especially if you have a disabled individual at your event and would like for them to feel more included) we are happy to do so based on the event type and location.
+             <br/><br/>
+             Wait! You have a service dog? If you've seen us at some public appearances or around town, you'll notice that Calypso/Lei Loni has a service dog to assist her with managing her medical conditions. His name is Baymax and he's a wonderful help! We are open to questions and conversations, but please remember he is a medical device and althoughj he's adorable, do not interact with him or distract him.
             </p>
         </v-col>
     </v-row>
   </v-card>
 </template>
 <script>
+import Vue from "vue";
+import VueRouter from "vue-router";
+Vue.use(VueRouter);
 export default {
   name: "FrequentlyAsked",
   components: {},
@@ -37,7 +46,13 @@ export default {
   },
   computed: {},
   watch: {},
-  methods: {},
+  methods: {
+    contact(){
+      this.$router.push({
+        name: "ContactEmail",
+      });
+    },
+  },
   created() {},
   mounted() {
     if (localStorage.getItem("token")) {

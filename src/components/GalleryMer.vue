@@ -1,6 +1,6 @@
 <template>
   <v-card class="mx-3 my-4">
-    <!-- <v-row>
+    <v-row>
     <v-col cols='3'>
       <v-container>
         <v-card>
@@ -8,8 +8,8 @@
             <v-col>
               <v-img :src="require('@/../src/assets/happy_loni.jpg')"/>
             </v-col>
-          </v-row> -->
-          <!-- <v-row>
+          </v-row> 
+          <v-row>
             <v-col>
               <v-img :src="require('@/../src/assets/la_jolla.jpg')"/>
             </v-col>
@@ -49,11 +49,11 @@
             <v-col>
               <v-img :src="require('@/../src/assets/cannibal_2.jpg')"/>
             </v-col>
-          </v-row> -->
-        <!-- </v-card>
+          </v-row> 
+        </v-card>
       </v-container>
     </v-col>
-  </v-row> -->
+  </v-row>
   </v-card>
 </template>
 
