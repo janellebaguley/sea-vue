@@ -9,7 +9,6 @@
       :mini-variant.sync="mini"
       :permanent="sidebarMenu"
       :width="280"
-      
     >
       <v-list-item class="px-2">
         <v-list-item-avatar rounded="0">
@@ -17,10 +16,11 @@
             @click.stop="mini = !mini"
             src="@/../src/assets/oshun.jpeg"
             alt="Logo"
-            style="cursor: pointer" />
+            style="cursor: pointer"
+          />
         </v-list-item-avatar>
         <v-list-item-title>
-          <h3 style="color:#ffffff;">The Sea Goddess Grotto</h3>
+          <h3 style="color: #ffffff">The Sea Goddess Grotto</h3>
         </v-list-item-title>
         <v-btn icon @click.stop="mini = !mini">
           <v-icon color="white">mdi-chevron-left</v-icon>
@@ -83,7 +83,7 @@
       </v-list>
     </v-navigation-drawer>
     <v-main>
-      <v-container id="con" >
+      <v-container id="con">
         <v-row class="fill-height">
           <v-col>
             <transition name="fade">
@@ -108,51 +108,51 @@ export default {
       drawer: true,
       navLinks: [
         {
-          title: 'Home',
-          link: '/home'
+          title: "Home",
+          link: "/home",
         },
         {
-          title: 'MER-chandise',
-          link: '/shop'
+          title: "MER-chandise",
+          link: "/shop",
         },
         {
-          title: 'Performances and Events',
-          link: '/events'
+          title: "Performances and Events",
+          link: "/events",
         },
         {
-          title: 'Meet the Mermaids',
-          link: '/meet'
+          title: "Meet the Mermaids",
+          link: "/meet",
         },
         {
-          title: 'Psychic',
-          link: '/psychic'
+          title: "Psychic",
+          link: "/psychic",
         },
         {
-          title: 'Gallery',
-          link: '/gallery'
+          title: "Gallery",
+          link: "/gallery",
         },
         {
-          title: 'Contact',
-          link: '/contact'
+          title: "Contact",
+          link: "/contact",
         },
         {
-          title: 'FAQ',
-          link: '/faq'
-        }
+          title: "FAQ",
+          link: "/faq",
+        },
       ],
-      currentTime: new Date().toLocaleDateString('en-US', {
-        weekday: 'short',
-        year: 'numeric',
-        month: 'short',
-        day: 'numeric'
+      currentTime: new Date().toLocaleDateString("en-US", {
+        weekday: "short",
+        year: "numeric",
+        month: "short",
+        day: "numeric",
       }),
-      selectedLocale: 'EN',
+      selectedLocale: "EN",
       loading2: false,
       items2: [],
       search: null,
       select: null,
       states: [],
-      mini: true
+      mini: true,
     };
   },
   created() {},
@@ -161,27 +161,27 @@ export default {
     clearInterval(this.timerId);
   },
   computed: {
-    activeItems: function() {
+    activeItems: function () {
       return this.items;
-    }
+    },
   },
   watch: {
     $route() {
       this.loggedin = this.userIsAuthenticated();
-    }
+    },
   },
   methods: {
     userIsAuthenticated() {
       let isAuthenticated = false;
-      if (localStorage.getItem('user')) isAuthenticated = true;
+      if (localStorage.getItem("user")) isAuthenticated = true;
       return isAuthenticated;
     },
     eventTrigger(name) {
-      if (name && name != '') {
+      if (name && name != "") {
         this[name]();
       }
-    }
-  }
+    },
+  },
 };
 </script>
 <style>
@@ -199,12 +199,11 @@ export default {
 
 .v-main__wrap {
   width: 100%;
-  background-color: #4889E0 !important;
-  
+  background-color: #4889e0 !important;
 }
 .v-main {
   width: 100%;
-  background-color: #4889E0 !important;
+  background-color: #4889e0 !important;
 }
 
 .v-list-item__title {
@@ -213,7 +212,7 @@ export default {
 }
 
 .theme--light.v-data-table > .v-data-table__wrapper > table > thead > tr > th {
-  color: #8627E0 !important;
+  color: #8627e0 !important;
   font-size: 0.85em;
 }
 
@@ -223,30 +222,34 @@ html {
 }
 
 h1.dashtitle {
-  color: #8627E0 !important;
+  color: #8627e0 !important;
   font-size: 1.75em;
 }
 
 .v-data-table-header tr {
-  background-color: #4889E0 !important;
-  color: #8627E0 !important;
+  background-color: #4889e0 !important;
+  color: #8627e0 !important;
 }
 
 .theme--light.v-data-table .v-data-table-header th.sortable,
 .theme--light.v-data-table .v-data-table-header th.sortable.active {
-  color: #8627E0 !important;
+  color: #8627e0 !important;
 }
 
 .theme--light.v-data-table .v-data-table-header th.sortable:hover,
 .theme--light.v-data-table .v-data-table-header th.sortable.active {
-  color: #8627E0 !important;
+  color: #8627e0 !important;
 }
 
-.theme--light.v-data-table .v-data-table-header th.sortable.active .v-data-table-header__icon {
+.theme--light.v-data-table
+  .v-data-table-header
+  th.sortable.active
+  .v-data-table-header__icon {
   color: white !important;
 }
 
-.v-navigation-drawer .v-list-item--active.v-list-item.v-list-item--link.theme--dark {
+.v-navigation-drawer
+  .v-list-item--active.v-list-item.v-list-item--link.theme--dark {
   color: #ffffff !important;
   caret-color: #ffffff !important;
 }
@@ -260,11 +263,17 @@ h1.dashtitle {
   color: #ffffff !important;
 }
 
-.v-application--is-ltr .v-list-group--no-action > .v-list-group__items > .v-list-item {
+.v-application--is-ltr
+  .v-list-group--no-action
+  > .v-list-group__items
+  > .v-list-item {
   padding-left: 64px !important;
 }
 
-.v-navigation-drawer__content > .v-list-group__items > .v-list-item > .v-list-item__title {
+.v-navigation-drawer__content
+  > .v-list-group__items
+  > .v-list-item
+  > .v-list-item__title {
   color: #e0b993 !important;
 }
 
@@ -282,7 +291,7 @@ h1.dashtitle {
 
 .container {
   width: 100%;
-  padding: 12px; 
+  padding: 12px;
   margin-right: 200px;
   margin-left: 200px;
 }
@@ -333,7 +342,7 @@ h1.dashtitle {
 }
 
 .theme--light.v-pagination .v-pagination__item--active {
-  color: #8627E0 !important;
+  color: #8627e0 !important;
 }
 
 @media (min-width: 960px) {

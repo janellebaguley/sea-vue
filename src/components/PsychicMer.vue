@@ -16,7 +16,7 @@
           video calls. <br /><br />
           Psychic services and tarot readings start at $60 an hour with a 1 hour
           minimum. Some services may incur an additional fee including medium
-          work and channeling. Please contact us for more information.
+          work and channeling. Please <v-btn color='secondary' class='ma-0 pa-0' @click='contact' text dense>Contact</v-btn> us for more information.
         </p>
       </v-col>
     </v-row>
@@ -41,7 +41,14 @@ export default {
   },
   computed: {},
   watch: {},
-  methods: {},
+  methods: {
+    contact(){
+      this.$router.push({
+        name: "ContactEmail",
+      });
+    },
+
+  },
   created() {},
   mounted() {
     if (localStorage.getItem("token")) {

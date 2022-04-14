@@ -263,7 +263,7 @@
     <v-card class="ma-4">
       <v-row class="mx-3">
         <v-col>
-          <h2 class="primary--text">Sea Goddess Purses (Standard Size)</h2>
+          <h2 class="primary--text">Sea Goddess Purses (Standard Size) $75</h2>
         </v-col>
       </v-row>
       <v-row class="mx-3 mb-2">
@@ -304,7 +304,7 @@
               <v-expansion-panel-content>
                 <v-row class="mx-1 mt-2">
                   <v-col>
-                    <p></p>
+                    <p>These lovely purses are made from duck cloth, which allows them to also be washable. The lining is also washable, I would recommend laying them flat to dry, however. Each purse is hand made by Sea Goddess Sapphire, with love. They are cross body at 52 in. in strap lenght. Purse fabric patterns/colors are limited and are made to order.</p>
                   </v-col>
                 </v-row>
               </v-expansion-panel-content>
@@ -316,7 +316,7 @@
      <v-card class="ma-4">
       <v-row class="mx-3">
         <v-col>
-          <h2 class="primary--text">Sea Goddess Small Purse</h2>
+          <h2 class="primary--text">Sea Goddess Small Purse $50</h2>
         </v-col>
       </v-row>
       <v-row class="mx-3 mb-2">
@@ -357,7 +357,7 @@
               <v-expansion-panel-content>
                 <v-row class="mx-1 mt-2">
                   <v-col>
-                    <p></p>
+                    <p>These lovely purses are made from duck cloth, which allows them to also be washable. The lining is also washable, I would recommend laying them flat to dry, however. Each purse is hand made by Sea Goddess Sapphire, with love. They are cross body at 52 in. in strap lenght. Purse fabric patterns/colors are limited and are made to order.</p>
                   </v-col>
                 </v-row>
               </v-expansion-panel-content>
@@ -369,7 +369,7 @@
      <v-card class="ma-4">
       <v-row class="mx-3">
         <v-col>
-          <h2 class="primary--text">Sea Goddess Change Purse</h2>
+          <h2 class="primary--text">Sea Goddess Change Purse $15</h2>
         </v-col>
       </v-row>
       <v-row class="mx-3 mb-2">
@@ -410,7 +410,7 @@
               <v-expansion-panel-content>
                 <v-row class="mx-1 mt-2">
                   <v-col>
-                    <p></p>
+                    <p>These lovely change purses are made from duck cloth, which allows them to also be washable. The lining is also washable, I would recommend laying them flat to dry, however. Each purse is hand made by Sea Goddess Sapphire, with love. They fit great inside your current purse or in one of our handmade Standard and Small purses. Purse fabric patterns/colors are limited and are made to order.</p>
                   </v-col>
                 </v-row>
               </v-expansion-panel-content>

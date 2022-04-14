@@ -1,5 +1,5 @@
 <template>
-  <v-card class="mx-3 mt-4">
+  <v-card class="mx-3 my-4">
     <v-row class='mx-1'>
       <v-col>
         <h1 class='primary--text'>FAQ</h1>
@@ -12,7 +12,7 @@
             What is a professional mermaid and how do I become one? Professional mermaids are licensed businesses that operate like any other party or event company. We specialize in creating unique magical experiences for our customers. It’s a real full time job! If you are interested in becoming a professional yourself, please become one of our Patrons. We offer lots of tutorials and Q&amp;A sessions to Patrons to help them on their journeys.
             <br/><br/>
             Can you really swim in that tail? Yes! Calypso is fully trained in the use of her tail (and other costuming) with over a decade of professional mermaid experience. She is able to glide through the water just like a fish and can freedive up to 15 feet.
-            <br/><br/>Where do I get a mermaid tail? We offer custom tails via <v-btn color='secondary' @click='contact' text dense>Contact</v-btn> only, or there are lots of online resources for purchasing a tail.
+            <br/><br/>Where do I get a mermaid tail? We offer custom tails via <v-btn color='secondary' class='ma-0 pa-0' @click='contact' text dense>Contact</v-btn> only, or there are lots of online resources for purchasing a tail.
              <br/><br/>
              You mentioned that you're disabled. What's your disability and does it affect your ability to perform? Calypso/Lei Loni is a Type 1 Diabetic with Degenerative Disc Disease and some neurological issues we're looking into. However, her disability does not affect her ability to perform and provide a wonderful experience for you and your guests. Since most events are fairly short in nature (rarely being longer than a half day) I can usually tend to my medical needs and after, so it won't interfere with your mermaid magic. There is a rare chance that she may have an emergency, but in over a decade of performing this has not happened.
              <br/><br/>
