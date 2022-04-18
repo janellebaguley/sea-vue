@@ -8,7 +8,7 @@
       color="#8627E0"
       :mini-variant.sync="mini"
       :permanent="sidebarMenu"
-      :width="280"
+      :width="290"
     >
       <v-list-item class="px-2">
         <v-list-item-avatar rounded="0">
@@ -212,7 +212,7 @@ export default {
 }
 
 .theme--light.v-data-table > .v-data-table__wrapper > table > thead > tr > th {
-  color: #8627e0 !important;
+  color: white !important;
   font-size: 0.85em;
 }
 

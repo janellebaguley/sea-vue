@@ -4,6 +4,11 @@
       <v-col>
         <h1 class='primary--text'>MER-chandise</h1>
       </v-col>
+      <v-col> 
+        <v-card-actions style="float:right;">
+          <v-btn color='primary' @click='shoppingCart(item)'>Cart ({{item.totalItems}})</v-btn>
+        </v-card-actions>
+      </v-col>
     </v-row>
     <v-card class="ma-4">
       <v-row class="mx-3">
@@ -11,9 +16,16 @@
           <h2 class="primary--text">Goddess Skirts Starting at $250</h2>
         </v-col>
       </v-row>
-      <v-row class="mx-3 mb-2">
+      <v-row class="mx-3">
         <v-col>
           <img alt="Skirt" />
+        </v-col>
+      </v-row>
+      <v-row class="mx-3">
+        <v-col cols='1'>
+          <v-text-field label='Qty' v-model='item.skirtLong' type='number' outlined dense min='1'/>
+        
+          <v-btn class='secondary' @click="addToCart(item)" dense>Add to Cart</v-btn>
         </v-col>
       </v-row>
       <v-row>
@@ -103,6 +115,13 @@
           <img alt="skirt" />
         </v-col>
       </v-row>
+      <v-row class="mx-3">
+        <v-col cols='1'>
+          <v-text-field label='Qty' v-model='item.skirtShort' type='number' outlined dense  min='1'/>
+        
+          <v-btn class='secondary' @click="addToCart(item)" dense>Add to Cart</v-btn>
+        </v-col>
+      </v-row>
       <v-row>
         <v-col>
           <v-expansion-panels flat dense>
@@ -183,6 +202,13 @@
       <v-row class="mx-3 mb-2">
         <v-col>
           <img alt="Kraken" />
+        </v-col>
+      </v-row>
+      <v-row class="mx-3">
+        <v-col cols='1'>
+          <v-text-field label='Qty' v-model='item.kraken' type='number' outlined dense  min='1'/>
+        
+          <v-btn class='secondary' @click="addToCart(item)" dense>Add to Cart</v-btn>
         </v-col>
       </v-row>
       <v-row>
@@ -271,6 +297,13 @@
           <img alt="Standard Purse" />
         </v-col>
       </v-row>
+      <v-row class="mx-3">
+        <v-col cols='1'>
+          <v-text-field label='Qty' v-model='item.standardPurse' type='number' outlined dense  min='1'/>
+        
+          <v-btn class='secondary' @click="addToCart(item)" dense>Add to Cart</v-btn>
+        </v-col>
+      </v-row>
       <v-row>
         <v-col>
           <v-expansion-panels flat dense>
@@ -321,7 +354,14 @@
       </v-row>
       <v-row class="mx-3 mb-2">
         <v-col>
-          <img alt="Standard Purse" />
+          <img alt="Small Purse" />
+        </v-col>
+      </v-row>
+      <v-row class="mx-3">
+        <v-col cols='1'>
+          <v-text-field label='Qty' v-model='item.smallPurse' type='number' outlined dense  min='1'/>
+        
+          <v-btn class='secondary' @click="addToCart(item)" dense>Add to Cart</v-btn>
         </v-col>
       </v-row>
       <v-row>
@@ -374,7 +414,14 @@
       </v-row>
       <v-row class="mx-3 mb-2">
         <v-col>
-          <img alt="Standard Purse" />
+          <img alt="Change Purse" />
+        </v-col>
+      </v-row>
+      <v-row class="mx-3">
+        <v-col cols='1'>
+          <v-text-field label='Qty' v-model='item.changePurse' type='number' outlined dense  min='1'/>
+        
+          <v-btn class='secondary' @click="addToCart(item)" dense>Add to Cart</v-btn>
         </v-col>
       </v-row>
       <v-row>
@@ -444,6 +491,60 @@
         </p>
       </v-col>
     </v-row>
+    <!-- Cart popup-->
+    <v-dialog v-model="dialogCreate" width="800">
+      <v-card>
+        <v-row class='mx-1 mt-1'>
+          <v-col>
+            <h2 class='primary--text'>Cart</h2>
+          </v-col>
+        </v-row>
+        <form @submit.prevent="">
+          <v-layout>
+            <v-flex>
+              <v-card elevation='0'>
+                <v-row class='mx-1 mt-4'>
+                  <v-col>
+                    <v-data-table
+                    :headers='headers'
+                    :items='rows'
+                    hide-default-footer>
+                    <template v-slot:[`item.quantity`]="{ item }">
+                <v-card-actions>
+                  <v-col col='1'>
+                    <v-text-field label='Qty' v-model='item.skirtLong' type='number' outlined dense min='1'></v-text-field>
+                  </v-col>
+                </v-card-actions>
+              </template>
+                    <template v-slot:[`item.actions`]="{ item }">
+                <v-card-actions>
+                  <v-btn
+                    text
+                    color="#EB5998"
+                    dense
+                    slot="activator"
+                    @click="openDelete(item)"
+                    small
+                  >Delete</v-btn>
+                </v-card-actions>
+              </template>
+              </v-data-table>
+                  </v-col>
+                </v-row>
+              </v-card>
+               <v-row class='mx-3 my-3'>
+                <v-col>
+                  <v-btn color='primary' class='mr-5' dense>Submit</v-btn>
+               
+                  <v-btn color='#EB5998' class='white--text' dense @click="dialogCreate = false">Close</v-btn>
+                </v-col>
+                <v-col cols='6'></v-col>
+              </v-row>
+            </v-flex>
+          </v-layout>
+        </form>
+      </v-card>
+    </v-dialog>
   </v-card>
 </template>
 <script>
@@ -455,17 +556,58 @@ export default {
       pageName: "Shop",
       search: "",
       loading: true,
+      dialogCreate: false,
       // form fields
       form: {
         id: 0,
       },
+      item: {
+        totalItems: 0,
+        skirtLong: 1,
+        skirtShort: 1,
+        kraken: 1,
+        standardPurse: 1,
+        smallPurse: 1,
+        changePurse: 1,
+      },
       menu: false,
-      rows: [],
+      rows: [{name: ''}],
+      headers: [
+        {
+          text: "Item",
+          value: "item",
+          sortable: false,
+          active: true,
+          width: '50%'
+        },
+        {
+          text: "Qty",
+          value: "quantity",
+          sortable: false,
+          active: true,
+        },
+        {
+          text: "Price",
+          value: "price",
+          sortable: false,
+          active: true,
+        },
+        {
+          text: "",
+          value: "actions",
+          sortable: false,
+          active: true,
+        }
+      ],
     };
   },
   computed: {},
   watch: {},
-  methods: {},
+  methods: {
+    shoppingCart(){
+      this.dialogCreate = true;
+    },
+  },
   created() {},
   mounted() {
     if (localStorage.getItem("token")) {
@@ -478,5 +620,8 @@ export default {
 <style>
 .v-expansion-panel-header {
   color: white;
+}
+.v-btn {
+  text-transform: none;
 }
 </style>
