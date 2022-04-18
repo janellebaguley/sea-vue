@@ -49,7 +49,7 @@
         <v-card  elevation='0'>
           <v-row>
             <v-col>
-              <v-img :src="require('@/../src/assets/family.jpg')"/>
+              <v-img contain :src="require('@/../src/assets/family.jpg')"/>
             </v-col>
             <v-col>
               <v-img :src="require('@/../src/assets/cannibal.jpg')"/>

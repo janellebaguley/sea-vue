@@ -10,25 +10,25 @@
           </v-row>
           <v-row class="mx-4">
             <v-col>
-              <v-text-field label="*First Name" outlined dense />
+              <v-text-field label="*First Name" required outlined dense />
             </v-col>
             <v-col>
-              <v-text-field label="*Last Name" outlined dense />
-            </v-col>
-          </v-row>
-          <v-row class="mx-4">
-            <v-col>
-              <v-text-field label="*Email" outlined dense />
+              <v-text-field label="*Last Name" required outlined dense />
             </v-col>
           </v-row>
           <v-row class="mx-4">
             <v-col>
-              <v-text-field label="*Subject" outlined dense />
+              <v-text-field label="*E-mail" v-model='email' :rules='emailRules' required outlined dense />
             </v-col>
           </v-row>
           <v-row class="mx-4">
             <v-col>
-              <v-textarea label="*Message" :rows="6" outlined dense />
+              <v-text-field label="*Subject" required outlined dense />
+            </v-col>
+          </v-row>
+          <v-row class="mx-4">
+            <v-col>
+              <v-textarea label="*Message" :rows="6" required outlined dense />
             </v-col>
           </v-row>
           <v-row class="mx-4">
@@ -67,6 +67,10 @@ export default {
       rows: [],
     };
   },
+  emailRules: [
+        v => !!v || 'E-mail is required',
+        v => /.+@.+\..+/.test(v) || 'E-mail must be valid',
+      ],
   computed: {},
   watch: {},
   methods: {},
