@@ -548,9 +548,13 @@
   </v-card>
 </template>
 <script>
+import Vue from "vue";
+import VueRouter from "vue-router";
+Vue.use(VueRouter);
 export default {
   name: "ShopMer",
   components: {},
+  props: ['items'],
   data() {
     return {
       pageName: "Shop",
@@ -601,12 +605,36 @@ export default {
       ],
     };
   },
-  computed: {},
+  computed: {
+    Total() {
+      let total = 0;
+      this.items.forEach(item => {
+        total += (item.price * item.qty);
+      });
+      return total;
+    }
+  },
   watch: {},
   methods: {
     shoppingCart(){
       this.dialogCreate = true;
     },
+    // Add Items to cart
+    addToCart(itemToAdd) {
+      let found = false;
+
+      // Add the item or increase qty
+			let itemInCart = this.cartItems.filter(item => item.id===itemToAdd.id);
+			let isItemInCart = itemInCart.length > 0;
+
+      if (isItemInCart === false) {
+        this.cartItems.push(Vue.util.extend({}, itemToAdd));
+      } else {
+				itemInCart[0].qty += itemToAdd.qty;
+			}
+			
+			itemToAdd.qty = 1;
+    }
   },
   created() {},
   mounted() {

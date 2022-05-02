@@ -95,7 +95,7 @@
         </v-row>
       </v-container>
     </v-main>
-  </v-app>
+    </v-app>
 </template>
 <script>
 //import permissions from "@/permissions";

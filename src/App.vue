@@ -1,5 +1,6 @@
 <template>
-    <component v-bind:is="layout"></component>
+    <component v-bind:is="layout">
+    </component>
 </template>
 <script>
     import LayoutDefault from './layouts/DefaultLayout'
