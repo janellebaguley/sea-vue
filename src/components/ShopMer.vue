@@ -2,11 +2,13 @@
   <v-card class="mx-3 my-4">
     <v-row class="mx-3">
       <v-col>
-        <h1 class='primary--text'>MER-chandise</h1>
+        <h1 class="primary--text">MER-chandise</h1>
       </v-col>
-      <v-col> 
-        <v-card-actions style="float:right;">
-          <v-btn color='primary' @click='shoppingCart(item)'>Cart ({{item.totalItems}})</v-btn>
+      <v-col>
+        <v-card-actions style="float: right">
+          <v-btn color="primary" @click="shoppingCart(item)"
+            >Cart ({{ item.totalItems }})</v-btn
+          >
         </v-card-actions>
       </v-col>
     </v-row>
@@ -17,15 +19,32 @@
         </v-col>
       </v-row>
       <v-row class="mx-3">
-        <v-col>
-          <img alt="Skirt" />
+        <v-col cols="3">
+          <v-container>
+            <v-row class="mx-3">
+              <v-col>
+                <img alt="Skirt" />
+              </v-col>
+            </v-row>
+          </v-container>
         </v-col>
-      </v-row>
-      <v-row class="mx-3">
-        <v-col cols='1'>
-          <v-text-field label='Qty' v-model='item.skirtLong' type='number' outlined dense min='1'/>
-        
-          <v-btn class='secondary' @click="addToCart(item)" dense>Add to Cart</v-btn>
+        <v-col cols="4">
+          <v-row class="mx-1">
+            <v-col cols="4">
+              <v-text-field
+                label="Qty"
+                v-model="item.skirtLong"
+                type="number"
+                outlined
+                dense
+                min="1"
+              />
+
+              <v-btn class="secondary" @click="addToCart(item)" dense
+                >Add to Cart</v-btn
+              >
+            </v-col>
+          </v-row>
         </v-col>
       </v-row>
       <v-row>
@@ -81,17 +100,17 @@
                       model is 5’8” and the skirt is 43” in length but can be
                       shortened upon request. All our skirts come with a
                       coordinating mask or pouch.
-                   <br/><br/>
+                      <br /><br />
                       Want something in a different fabric or multiple colors or
                       need a custom size? We can do that too, please contact us
                       for custom inquiries!
-                    <br/><br/>
+                      <br /><br />
                       Upon check out please give us your waist measurement,
                       length from natural waist to floor, mask/pouch preference,
                       and color preference. We will contact you with the
                       available spandex colors that match your preferences
                       before starting your creation.
-                   <br/><br/>
+                      <br /><br />
                       Please note that these are custom crafted and ordered.
                       Production time can take up to 4 weeks (but we always try
                       to get them done quicker!).
@@ -111,15 +130,31 @@
         </v-col>
       </v-row>
       <v-row class="mx-3">
-        <v-col>
-          <img alt="skirt" />
+        <v-col cols="3">
+          <v-container>
+            <v-row class="mx-3">
+              <v-col>
+                <img alt="Skirt" />
+              </v-col>
+            </v-row>
+          </v-container>
         </v-col>
-      </v-row>
-      <v-row class="mx-3">
-        <v-col cols='1'>
-          <v-text-field label='Qty' v-model='item.skirtShort' type='number' outlined dense  min='1'/>
-        
-          <v-btn class='secondary' @click="addToCart(item)" dense>Add to Cart</v-btn>
+        <v-col cols="4">
+          <v-row class="mx-1">
+            <v-col cols="4">
+              <v-text-field
+                label="Qty"
+                v-model="item.skirtShort"
+                type="number"
+                outlined
+                dense
+                min="1"
+              />
+              <v-btn class="secondary" @click="addToCart(item)" dense
+                >Add to Cart</v-btn
+              >
+            </v-col>
+          </v-row>
         </v-col>
       </v-row>
       <v-row>
@@ -172,13 +207,13 @@
                       custom prints, or sizes over a US 28 please contact us for
                       more information before ordering as they may incur
                       additional costs.
-                    <br/><br/>
+                      <br /><br />
                       Upon check out please give us your waist measurement,
                       length from natural waist to floor, mask/pouch preference,
                       and color preference. We will contact you with the
                       available spandex colors that match your preferences
                       before starting your creation.
-                    <br/><br/>
+                      <br /><br />
                       Please note that these are custom crafted and ordered.
                       Production time can take up to 3 weeks (but we always try
                       to get them done quicker!).
@@ -199,16 +234,32 @@
           </h2>
         </v-col>
       </v-row>
-      <v-row class="mx-3 mb-2">
-        <v-col>
-          <img alt="Kraken" />
-        </v-col>
-      </v-row>
       <v-row class="mx-3">
-        <v-col cols='1'>
-          <v-text-field label='Qty' v-model='item.kraken' type='number' outlined dense  min='1'/>
-        
-          <v-btn class='secondary' @click="addToCart(item)" dense>Add to Cart</v-btn>
+        <v-col cols="3">
+          <v-container>
+            <v-row class="mx-3">
+              <v-col>
+                <img alt="Kraken" />
+              </v-col>
+            </v-row>
+          </v-container>
+        </v-col>
+        <v-col cols="4">
+          <v-row class="mx-1">
+            <v-col cols="4">
+              <v-text-field
+                label="Qty"
+                v-model="item.kraken"
+                type="number"
+                outlined
+                dense
+                min="1"
+              />
+              <v-btn class="secondary" @click="addToCart(item)" dense
+                >Add to Cart</v-btn
+              >
+            </v-col>
+          </v-row>
         </v-col>
       </v-row>
       <v-row>
@@ -256,7 +307,7 @@
                       to your specified colors. The kraken will also be adorned
                       with a few small crystals and beads to match your
                       necklace.
-                    <br/><br/>
+                      <br /><br />
                       Please note that some crystals may be unavailable or incur
                       an additional fee if they are extremely rare or difficult
                       to find. If you have a specific crystal, shell, or bead
@@ -266,14 +317,14 @@
                       Some crystals are toxic in water or are water soluble or
                       may incur an additional fee. Each kraken necklace also
                       comes with a surprise coordinating hair comb or clip!
-                    <br/><br/>
+                      <br /><br />
                       Upon check out please specify preferred colors, crystals,
                       and glitter. Please note that some crystals may be
                       unavailable or rare, but we will do our best to match them
                       as best we can! If you have images of your tail, costume,
                       etc. please email them to us so we can use them for
                       reference and color match.
-                    <br/><br/>
+                      <br /><br />
                       Please note that these are custom crafted and ordered.
                       Production time can take up to 2 weeks (but we always try
                       to get them done quicker!).
@@ -292,16 +343,32 @@
           <h2 class="primary--text">Sea Goddess Purses (Standard Size) $75</h2>
         </v-col>
       </v-row>
-      <v-row class="mx-3 mb-2">
-        <v-col>
-          <img alt="Standard Purse" />
-        </v-col>
-      </v-row>
       <v-row class="mx-3">
-        <v-col cols='1'>
-          <v-text-field label='Qty' v-model='item.standardPurse' type='number' outlined dense  min='1'/>
-        
-          <v-btn class='secondary' @click="addToCart(item)" dense>Add to Cart</v-btn>
+        <v-col cols="3">
+          <v-container>
+            <v-row class="mx-3">
+              <v-col>
+                <img alt="Standard Purse" />
+              </v-col>
+            </v-row>
+          </v-container>
+        </v-col>
+        <v-col cols="4">
+          <v-row class="mx-1">
+            <v-col cols="4">
+              <v-text-field
+                label="Qty"
+                v-model="item.standardPurse"
+                type="number"
+                outlined
+                dense
+                min="1"
+              />
+              <v-btn class="secondary" @click="addToCart(item)" dense
+                >Add to Cart</v-btn
+              >
+            </v-col>
+          </v-row>
         </v-col>
       </v-row>
       <v-row>
@@ -337,7 +404,14 @@
               <v-expansion-panel-content>
                 <v-row class="mx-1 mt-2">
                   <v-col>
-                    <p>These lovely purses are made from duck cloth, which allows them to also be washable. The lining is also washable, I would recommend laying them flat to dry, however. Each purse is hand made by Sea Goddess Sapphire, with love. They are cross body at 52 in. in strap lenght. Purse fabric patterns/colors are limited and are made to order.</p>
+                    <p>
+                      These lovely purses are made from duck cloth, which allows
+                      them to also be washable. The lining is also washable, I
+                      would recommend laying them flat to dry, however. Each
+                      purse is hand made by Sea Goddess Sapphire, with love.
+                      They are cross body at 52 in. in strap length. Purse
+                      fabric patterns/colors are limited and are made to order.
+                    </p>
                   </v-col>
                 </v-row>
               </v-expansion-panel-content>
@@ -346,22 +420,38 @@
         </v-col>
       </v-row>
     </v-card>
-     <v-card class="ma-4">
+    <v-card class="ma-4">
       <v-row class="mx-3">
         <v-col>
           <h2 class="primary--text">Sea Goddess Small Purse $50</h2>
         </v-col>
       </v-row>
-      <v-row class="mx-3 mb-2">
-        <v-col>
-          <img alt="Small Purse" />
-        </v-col>
-      </v-row>
       <v-row class="mx-3">
-        <v-col cols='1'>
-          <v-text-field label='Qty' v-model='item.smallPurse' type='number' outlined dense  min='1'/>
-        
-          <v-btn class='secondary' @click="addToCart(item)" dense>Add to Cart</v-btn>
+        <v-col cols="3">
+          <v-container>
+            <v-row class="mx-3">
+              <v-col>
+                <img alt="Small Purse" />
+              </v-col>
+            </v-row>
+          </v-container>
+        </v-col>
+        <v-col cols="4">
+          <v-row class="mx-1">
+            <v-col cols="4">
+              <v-text-field
+                label="Qty"
+                v-model="item.smallPurse"
+                type="number"
+                outlined
+                dense
+                min="1"
+              />
+              <v-btn class="secondary" @click="addToCart(item)" dense
+                >Add to Cart</v-btn
+              >
+            </v-col>
+          </v-row>
         </v-col>
       </v-row>
       <v-row>
@@ -397,7 +487,14 @@
               <v-expansion-panel-content>
                 <v-row class="mx-1 mt-2">
                   <v-col>
-                    <p>These lovely purses are made from duck cloth, which allows them to also be washable. The lining is also washable, I would recommend laying them flat to dry, however. Each purse is hand made by Sea Goddess Sapphire, with love. They are cross body at 52 in. in strap lenght. Purse fabric patterns/colors are limited and are made to order.</p>
+                    <p>
+                      These lovely purses are made from duck cloth, which allows
+                      them to also be washable. The lining is also washable, I
+                      would recommend laying them flat to dry, however. Each
+                      purse is hand made by Sea Goddess Sapphire, with love.
+                      They are cross body at 52 in. in strap length. Purse
+                      fabric patterns/colors are limited and are made to order.
+                    </p>
                   </v-col>
                 </v-row>
               </v-expansion-panel-content>
@@ -406,22 +503,38 @@
         </v-col>
       </v-row>
     </v-card>
-     <v-card class="ma-4">
+    <v-card class="ma-4">
       <v-row class="mx-3">
         <v-col>
           <h2 class="primary--text">Sea Goddess Change Purse $15</h2>
         </v-col>
       </v-row>
-      <v-row class="mx-3 mb-2">
-        <v-col>
-          <img alt="Change Purse" />
-        </v-col>
-      </v-row>
       <v-row class="mx-3">
-        <v-col cols='1'>
-          <v-text-field label='Qty' v-model='item.changePurse' type='number' outlined dense  min='1'/>
-        
-          <v-btn class='secondary' @click="addToCart(item)" dense>Add to Cart</v-btn>
+        <v-col cols="3">
+          <v-container>
+            <v-row class="mx-3">
+              <v-col>
+                <img alt="Change Purse" />
+              </v-col>
+            </v-row>
+          </v-container>
+        </v-col>
+        <v-col cols="4">
+          <v-row class="mx-1">
+            <v-col cols="4">
+              <v-text-field
+                label="Qty"
+                v-model="item.changePurse"
+                type="number"
+                outlined
+                dense
+                min="1"
+              />
+              <v-btn class="secondary" @click="addToCart(item)" dense
+                >Add to Cart</v-btn
+              >
+            </v-col>
+          </v-row>
         </v-col>
       </v-row>
       <v-row>
@@ -457,7 +570,15 @@
               <v-expansion-panel-content>
                 <v-row class="mx-1 mt-2">
                   <v-col>
-                    <p>These lovely change purses are made from duck cloth, which allows them to also be washable. The lining is also washable, I would recommend laying them flat to dry, however. Each purse is hand made by Sea Goddess Sapphire, with love. They fit great inside your current purse or in one of our handmade Standard and Small purses. Purse fabric patterns/colors are limited and are made to order.</p>
+                    <p>
+                      These lovely change purses are made from duck cloth, which
+                      allows them to also be washable. The lining is also
+                      washable, I would recommend laying them flat to dry,
+                      however. Each purse is hand made by Sea Goddess Sapphire,
+                      with love. They fit great inside your current purse or in
+                      one of our handmade Standard and Small purses. Purse
+                      fabric patterns/colors are limited and are made to order.
+                    </p>
                   </v-col>
                 </v-row>
               </v-expansion-panel-content>
@@ -494,51 +615,66 @@
     <!-- Cart popup-->
     <v-dialog v-model="dialogCreate" width="800">
       <v-card>
-        <v-row class='mx-1 mt-1'>
+        <v-row class="mx-1 mt-1">
           <v-col>
-            <h2 class='primary--text'>Cart</h2>
+            <h2 class="primary--text">Cart</h2>
           </v-col>
         </v-row>
         <form @submit.prevent="">
           <v-layout>
             <v-flex>
-              <v-card elevation='0'>
-                <v-row class='mx-1 mt-4'>
+              <v-card elevation="0">
+                <v-row class="mx-1 mt-4">
                   <v-col>
                     <v-data-table
-                    :headers='headers'
-                    :items='rows'
-                    hide-default-footer>
-                    <template v-slot:[`item.quantity`]="{ item }">
-                <v-card-actions>
-                  <v-col col='1'>
-                    <v-text-field label='Qty' v-model='item.skirtLong' type='number' outlined dense min='1'></v-text-field>
-                  </v-col>
-                </v-card-actions>
-              </template>
-                    <template v-slot:[`item.actions`]="{ item }">
-                <v-card-actions>
-                  <v-btn
-                    text
-                    color="#EB5998"
-                    dense
-                    slot="activator"
-                    @click="openDelete(item)"
-                    small
-                  >Delete</v-btn>
-                </v-card-actions>
-              </template>
-              </v-data-table>
+                      :headers="headers"
+                      :items="rows"
+                      hide-default-footer
+                    >
+                      <template v-slot:[`item.quantity`]="{ item }">
+                        <v-card-actions>
+                          <v-col col="1">
+                            <v-text-field
+                              label="Qty"
+                              v-model="item.skirtLong"
+                              type="number"
+                              outlined
+                              dense
+                              min="1"
+                            ></v-text-field>
+                          </v-col>
+                        </v-card-actions>
+                      </template>
+                      <template v-slot:[`item.actions`]="{ item }">
+                        <v-card-actions>
+                          <v-btn
+                            text
+                            color="#EB5998"
+                            dense
+                            slot="activator"
+                            @click="openDelete(item)"
+                            small
+                            >Delete</v-btn
+                          >
+                        </v-card-actions>
+                      </template>
+                    </v-data-table>
                   </v-col>
                 </v-row>
               </v-card>
-               <v-row class='mx-3 my-3'>
+              <v-row class="mx-3 my-3">
                 <v-col>
-                  <v-btn color='primary' class='mr-5' dense>Submit</v-btn>
-               
-                  <v-btn color='#EB5998' class='white--text' dense @click="dialogCreate = false">Close</v-btn>
+                  <v-btn color="primary" class="mr-5" dense>Submit</v-btn>
+
+                  <v-btn
+                    color="#EB5998"
+                    class="white--text"
+                    dense
+                    @click="dialogCreate = false"
+                    >Close</v-btn
+                  >
                 </v-col>
-                <v-col cols='6'></v-col>
+                <v-col cols="6"></v-col>
               </v-row>
             </v-flex>
           </v-layout>
@@ -554,7 +690,7 @@ Vue.use(VueRouter);
 export default {
   name: "ShopMer",
   components: {},
-  props: ['items'],
+  props: ["items"],
   data() {
     return {
       pageName: "Shop",
@@ -575,14 +711,14 @@ export default {
         changePurse: 1,
       },
       menu: false,
-      rows: [{name: ''}],
+      rows: [{ name: "" }],
       headers: [
         {
           text: "Item",
           value: "item",
           sortable: false,
           active: true,
-          width: '50%'
+          width: "50%",
         },
         {
           text: "Qty",
@@ -601,40 +737,47 @@ export default {
           value: "actions",
           sortable: false,
           active: true,
-        }
+        },
       ],
     };
   },
   computed: {
     Total() {
       let total = 0;
-      this.items.forEach(item => {
-        total += (item.price * item.qty);
+      this.items.forEach((item) => {
+        total += item.price * item.qty;
       });
       return total;
-    }
+    },
+    totalItems() {
+			return this.cartItems.reduce((accumulator , item) => {
+				return accumulator  + item.qty;
+			}, 0);
+		}
   },
   watch: {},
   methods: {
-    shoppingCart(){
+    shoppingCart() {
       this.dialogCreate = true;
     },
     // Add Items to cart
     addToCart(itemToAdd) {
-      let found = false;
+      // let found = false;
 
       // Add the item or increase qty
-			let itemInCart = this.cartItems.filter(item => item.id===itemToAdd.id);
-			let isItemInCart = itemInCart.length > 0;
+      let itemInCart = this.cartItems.filter(
+        (item) => item.id === itemToAdd.id
+      );
+      let isItemInCart = itemInCart.length > 0;
 
       if (isItemInCart === false) {
         this.cartItems.push(Vue.util.extend({}, itemToAdd));
       } else {
-				itemInCart[0].qty += itemToAdd.qty;
-			}
-			
-			itemToAdd.qty = 1;
-    }
+        itemInCart[0].qty += itemToAdd.qty;
+      }
+
+      itemToAdd.qty = 1;
+    },
   },
   created() {},
   mounted() {

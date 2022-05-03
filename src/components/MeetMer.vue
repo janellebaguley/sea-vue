@@ -64,7 +64,7 @@
                     entertaining humans of all ages and backgrounds. She also
                     loves using some of her mermaid magic to let others feel the
                     joy of being a mermaid as well. During her off time Calypso
-                    can be found exploring her San Diego home, travelling, and
+                    can be found exploring her San Diego home, traveling, and
                     investigating new humans and their strange technology and
                     creations.
                   </p>

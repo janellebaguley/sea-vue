@@ -278,7 +278,7 @@
       <v-col>
         <v-expansion-panels>
           <v-expansion-panel>
-             <v-expansion-panel-header
+            <v-expansion-panel-header
               color="#EB5998"
               class="white--text ma-0 pa-0"
               dense
@@ -286,7 +286,9 @@
               <template v-slot:default="{ open }">
                 <v-row class="mx-1 mt-1">
                   <v-col>
-                    <h3 class="white--text">Ala Carte Add Ons to Any Booking</h3>
+                    <h3 class="white--text">
+                      Ala Carte Add Ons to Any Booking
+                    </h3>
                   </v-col>
                   <v-col>
                     <v-card-actions style="float: right">
@@ -302,85 +304,89 @@
               </template>
             </v-expansion-panel-header>
             <v-expansion-panel-content>
-    <v-row class="mx-1 my-2">
-      <v-col>
-        <ol>
-          <li>Additional appearance hours: $80 per hour</li>
-          <li>
-            Additional mermaids: $50 per hour (both mermaids must be booked for
-            the same duration of time)
-          </li>
-          <li>
-            Additional shell or sea glass trinkets for guests: $10 per dozen
-          </li>
-          <li>
-            Additional Trinkets for grown-up guests (“pearl” necklaces or leis
-            and shells): $25 per dozen
-          </li>
-          <li>
-            10 ft by 6 ft photobooth backdrop rental (please allow an additional
-            90 minutes for set up and take down before and after the event):
-            $200
-          </li>
-          <li>
-            Handmade mermaid gifts (hair clips, pendants, or tinsel crowns): $5
-            each
-          </li>
-          <li>Handcrafted resin jewelry or hair clips: $30 each</li>
-          <li>
-            Mermaid games with prizes (Your Choice of fishing for prizes, diving
-            games and toys, or adding prizes to any of the included games or
-            activities): $30 per 12 guests
-          </li>
-          <li>
-            Mermaid party favors for children (includes a mix of seashells,
-            mermaid treasure, candy, mermaid toys, stickers, play makeup, etc.
-            and can be customized): $75+ per dozen
-          </li>
-          <li>
-            Mermaid party favors for adults (includes a mix of candy, homegoods,
-            accessories, makeup, trinkets, etc. and can be customized): $150+
-            per dozen.
-          </li>
-          <li>
-            Mermaid crafts for adults: Your choice of shell tiaras $35, crystal
-            tiaras $50, necklaces: $30, earrings $10. (Please note cost is per
-            person and craft time takes up at least an hour.)
-          </li>
-          <li>
-            Mermaid crafts for kids: your choice of necklaces $5, coloring or
-            painting activities $5, hanging paper jellyfish $5, foam mermaid
-            tails or tiaras $6, colored sand bottles $6, sensory ocean bottles
-            $10. (Please note cost is per person and craft time takes at least
-            an hour.)
-          </li>
-          <li>
-            Mermaid glitter face paint for up to 12 guests: $50 (Glitter is
-            biodegradable and skin safe!)
-          </li>
-          <li>Photo Prints or Stickers of Calypso: $6 per dozen</li>
-          <li>
-            Mystic Mermaid Oracle Readings or Tarot: $60-$120+ (based on time
-            and number of guests)
-          </li>
-          <li>Mermaid Costumes: Price Varies</li>
-          <ul>
-            <li>
-              We are trained artists and seamstresses and can create a custom
-              unique mermaid outfit for you or your guest(s) of honor for an
-              additional fee. We make mermaid tops, necklaces, hair pieces,
-              tiaras, swimmable mermaid tails, shimmering skirts, among other
-              things. Prices are based on the number of requested custom pieces,
-              type of pieces, etc. Custom pieces must be paid for in full before
-              production begins and need to be ordered at least 3 weeks in
-              advance as they take time to produce. Please check our Instagram
-              or Gallery page and contact us with inquiries and for a price
-              quote!
-            </li>
-          </ul>
-        </ol>
-      </v-col>
-    </v-row>
+              <v-row class="mx-1 my-2">
+                <v-col>
+                  <ol>
+                    <li>Additional appearance hours: $80 per hour</li>
+                    <li>
+                      Additional mermaids: $50 per hour (both mermaids must be
+                      booked for the same duration of time)
+                    </li>
+                    <li>
+                      Additional shell or sea glass trinkets for guests: $10 per
+                      dozen
+                    </li>
+                    <li>
+                      Additional Trinkets for grown-up guests (“pearl” necklaces
+                      or leis and shells): $25 per dozen
+                    </li>
+                    <li>
+                      10 ft by 6 ft photobooth backdrop rental (please allow an
+                      additional 90 minutes for set up and take down before and
+                      after the event): $200
+                    </li>
+                    <li>
+                      Handmade mermaid gifts (hair clips, pendants, or tinsel
+                      crowns): $5 each
+                    </li>
+                    <li>Handcrafted resin jewelry or hair clips: $30 each</li>
+                    <li>
+                      Mermaid games with prizes (Your Choice of fishing for
+                      prizes, diving games and toys, or adding prizes to any of
+                      the included games or activities): $30 per 12 guests
+                    </li>
+                    <li>
+                      Mermaid party favors for children (includes a mix of
+                      seashells, mermaid treasure, candy, mermaid toys,
+                      stickers, play makeup, etc. and can be customized): $75+
+                      per dozen
+                    </li>
+                    <li>
+                      Mermaid party favors for adults (includes a mix of candy,
+                      home goods, accessories, makeup, trinkets, etc. and can be
+                      customized): $150+ per dozen.
+                    </li>
+                    <li>
+                      Mermaid crafts for adults: Your choice of shell tiaras
+                      $35, crystal tiaras $50, necklaces: $30, earrings $10.
+                      (Please note cost is per person and craft time takes up at
+                      least an hour.)
+                    </li>
+                    <li>
+                      Mermaid crafts for kids: your choice of necklaces $5,
+                      coloring or painting activities $5, hanging paper
+                      jellyfish $5, foam mermaid tails or tiaras $6, colored
+                      sand bottles $6, sensory ocean bottles $10. (Please note
+                      cost is per person and craft time takes at least an hour.)
+                    </li>
+                    <li>
+                      Mermaid glitter face paint for up to 12 guests: $50
+                      (Glitter is biodegradable and skin safe!)
+                    </li>
+                    <li>Photo Prints or Stickers of Calypso: $6 per dozen</li>
+                    <li>
+                      Mystic Mermaid Oracle Readings or Tarot: $60-$120+ (based
+                      on time and number of guests)
+                    </li>
+                    <li>Mermaid Costumes: Price Varies</li>
+                    <ul>
+                      <li>
+                        We are trained artists and seamstresses and can create a
+                        custom unique mermaid outfit for you or your guest(s) of
+                        honor for an additional fee. We make mermaid tops,
+                        necklaces, hair pieces, tiaras, swimmable mermaid tails,
+                        shimmering skirts, among other things. Prices are based
+                        on the number of requested custom pieces, type of
+                        pieces, etc. Custom pieces must be paid for in full
+                        before production begins and need to be ordered at least
+                        3 weeks in advance as they take time to produce. Please
+                        check our Instagram or Gallery page and contact us with
+                        inquiries and for a price quote!
+                      </li>
+                    </ul>
+                  </ol>
+                </v-col>
+              </v-row>
             </v-expansion-panel-content>
           </v-expansion-panel>
         </v-expansion-panels>
