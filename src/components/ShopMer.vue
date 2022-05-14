@@ -4,15 +4,29 @@
       <v-col>
         <h1 class="primary--text">MER-chandise</h1>
       </v-col>
-      <v-col>
+      <v-col class='mr-3'>
         <v-card-actions style="float: right">
-          <v-btn color="primary" @click="shoppingCart(item)"
-            >Cart ({{ item.totalItems }})</v-btn
-          >
+          <v-btn color="secondary" @click='etsy'
+            >Etsy Orders</v-btn>
         </v-card-actions>
       </v-col>
     </v-row>
     <v-card class="ma-4">
+    <v-row class="mx-3">
+      <v-col cols='3'>
+        <h2 class="secondary--text">Custom Orders Only</h2>
+      </v-col>
+      <v-col class='mt-1'>
+        <h4 class="secondary--text">*Please Contact us for orders! The following items take 4-6 Weeks to create.</h4>
+      </v-col>
+      <v-col cols='2'>
+        <v-card-actions style="float: right">
+          <v-btn color="primary" @click="contact"
+            >Contact Us</v-btn
+          >
+        </v-card-actions>
+      </v-col>
+    </v-row>
       <v-row class="mx-3">
         <v-col>
           <h2 class="primary--text">Goddess Skirts Starting at $250</h2>
@@ -22,13 +36,13 @@
         <v-col cols="3">
           <v-container>
             <v-row class="mx-3">
-              <v-col>
-                <img alt="Skirt" />
+              <v-col cols=''>  
+                <v-img :src="require('@/../src/assets/maxi_skirt.jpg')" alt='Maxi Skirt'/>
               </v-col>
             </v-row>
           </v-container>
         </v-col>
-        <v-col cols="4">
+        <!-- <v-col cols="4">
           <v-row class="mx-1">
             <v-col cols="4">
               <v-text-field
@@ -45,7 +59,7 @@
               >
             </v-col>
           </v-row>
-        </v-col>
+        </v-col> -->
       </v-row>
       <v-row>
         <v-col>
@@ -133,13 +147,13 @@
         <v-col cols="3">
           <v-container>
             <v-row class="mx-3">
-              <v-col>
-                <img alt="Skirt" />
+              <v-col cols=''>  
+                <v-img :src="require('@/../src/assets/mini_skirt.jpg')" alt='Mini Skirt'/>
               </v-col>
             </v-row>
           </v-container>
         </v-col>
-        <v-col cols="4">
+        <!-- <v-col cols="4">
           <v-row class="mx-1">
             <v-col cols="4">
               <v-text-field
@@ -155,7 +169,7 @@
               >
             </v-col>
           </v-row>
-        </v-col>
+        </v-col> -->
       </v-row>
       <v-row>
         <v-col>
@@ -244,7 +258,7 @@
             </v-row>
           </v-container>
         </v-col>
-        <v-col cols="4">
+        <!-- <v-col cols="4">
           <v-row class="mx-1">
             <v-col cols="4">
               <v-text-field
@@ -260,7 +274,7 @@
               >
             </v-col>
           </v-row>
-        </v-col>
+        </v-col> -->
       </v-row>
       <v-row>
         <v-col>
@@ -353,7 +367,7 @@
             </v-row>
           </v-container>
         </v-col>
-        <v-col cols="4">
+        <!-- <v-col cols="4">
           <v-row class="mx-1">
             <v-col cols="4">
               <v-text-field
@@ -369,7 +383,7 @@
               >
             </v-col>
           </v-row>
-        </v-col>
+        </v-col> -->
       </v-row>
       <v-row>
         <v-col>
@@ -436,7 +450,7 @@
             </v-row>
           </v-container>
         </v-col>
-        <v-col cols="4">
+        <!-- <v-col cols="4">
           <v-row class="mx-1">
             <v-col cols="4">
               <v-text-field
@@ -452,7 +466,7 @@
               >
             </v-col>
           </v-row>
-        </v-col>
+        </v-col> -->
       </v-row>
       <v-row>
         <v-col>
@@ -519,7 +533,7 @@
             </v-row>
           </v-container>
         </v-col>
-        <v-col cols="4">
+        <!-- <v-col cols="4">
           <v-row class="mx-1">
             <v-col cols="4">
               <v-text-field
@@ -535,7 +549,7 @@
               >
             </v-col>
           </v-row>
-        </v-col>
+        </v-col> -->
       </v-row>
       <v-row>
         <v-col>
@@ -613,7 +627,7 @@
       </v-col>
     </v-row>
     <!-- Cart popup-->
-    <v-dialog v-model="dialogCreate" width="800">
+    <!-- <v-dialog v-model="dialogCreate" width="800">
       <v-card>
         <v-row class="mx-1 mt-1">
           <v-col>
@@ -680,7 +694,7 @@
           </v-layout>
         </form>
       </v-card>
-    </v-dialog>
+    </v-dialog> -->
   </v-card>
 </template>
 <script>
@@ -757,6 +771,11 @@ export default {
   },
   watch: {},
   methods: {
+    contact(){
+      this.$router.push({
+        name: "ContactEmail",
+      });
+    },
     shoppingCart() {
       this.dialogCreate = true;
     },

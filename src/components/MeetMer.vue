@@ -11,8 +11,8 @@
       </v-col>
     </v-row>
     <v-row class="mx-3 my-2">
-      <v-col>
-        <img alt="Calypso" />
+      <v-col cols='4'>
+        <v-img :src="require('@/../src/assets/happy_loni.jpg')" alt='Calypso'/>
       </v-col>
     </v-row>
     <v-row class="mx-1">
@@ -138,7 +138,7 @@
     </v-row>
     <v-row class="mx-3">
       <v-col>
-        <h2 class="primary--text">Sea Goddess Sapphire:</h2>
+        <h2 class="primary--text">Sea Punk Goddess Sapphire:</h2>
       </v-col>
     </v-row>
     <v-row class="mx-3 my-2">
