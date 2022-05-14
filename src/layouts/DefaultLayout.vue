@@ -10,7 +10,7 @@
       :permanent="sidebarMenu"
       :width="290"
     >
-      <v-list-item class="px-2">
+      <v-list-item class="px-1">
         <v-list-item-avatar rounded="0">
           <img
             @click.stop="mini = !mini"
@@ -136,7 +136,7 @@ export default {
           link: "/contact",
         },
         {
-          title: "FAQ",
+          title: "Frequently Asked Questions",
           link: "/faq",
         },
       ],
@@ -195,7 +195,10 @@ export default {
 
 .v-input.dg-page-size {
   font-size: 14px !important;
+     font-family: "Annabelle";
 }
+
+
 
 .v-main__wrap {
   width: 100%;
@@ -208,22 +211,43 @@ export default {
 
 .v-list-item__title {
   align-self: center;
-  font-size: 0.9rem !important;
+  font-size: 1.0rem !important;
+     font-family: "Annabelle";
+}
+h1 {
+     font-family: "Annabelle";
 }
 
+h2 {
+     font-family: "Annabelle";
+}
+
+h3 {
+     font-family: "Annabelle";
+}
+
+h4 {
+     font-family: "Annabelle";
+}
+h5 {
+     font-family: "Annabelle";
+}
 .theme--light.v-data-table > .v-data-table__wrapper > table > thead > tr > th {
   color: white !important;
   font-size: 0.85em;
+     font-family: "Annabelle";
 }
 
 html {
   font-size: 14px !important;
+     font-family: "Annabelle";
   text-rendering: opti mizeLegibility;
 }
 
 h1.dashtitle {
   color: #8627e0 !important;
   font-size: 1.75em;
+     font-family: "Annabelle";
 }
 
 .v-data-table-header tr {
@@ -365,11 +389,13 @@ h1.dashtitle {
 
 .topbar-text {
   font-size: 1rem;
+     font-family: "Annabelle";
   padding: 0;
 }
 
 .tiny {
   font-size: 0.7rem;
+     font-family: "Annabelle";
 }
 
 .v-toolbar__content {
@@ -394,6 +420,7 @@ div.no-gutters .footerlinks-wrapper {
   color: #ffffff;
   text-decoration: underline;
   font-size: 0.75rem;
+     font-family: "Annabelle";
 }
 
 .v-application a.footerlinks:hover {

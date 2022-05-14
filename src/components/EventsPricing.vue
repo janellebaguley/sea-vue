@@ -4,6 +4,13 @@
       <v-col>
         <h1 class="primary--text">Performances and Events</h1>
       </v-col>
+      <v-col cols='2'>
+        <v-card-actions style="float: right">
+          <v-btn color="primary" @click="contact"
+            >Contact Us</v-btn
+          >
+        </v-card-actions>
+      </v-col>
     </v-row>
     <v-row class="mx-3">
       <v-col>
@@ -456,6 +463,9 @@
   </v-card>
 </template>
 <script>
+import Vue from "vue";
+import VueRouter from "vue-router";
+Vue.use(VueRouter);
 export default {
   name: "EventsPricing",
   components: {},
@@ -474,7 +484,13 @@ export default {
   },
   computed: {},
   watch: {},
-  methods: {},
+  methods: {
+    contact(){
+      this.$router.push({
+        name: "ContactEmail",
+      });
+    },
+  },
   created() {},
   mounted() {
     if (localStorage.getItem("token")) {

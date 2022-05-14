@@ -21,3 +21,8 @@
         }
     }
 </script>
+<style>
+@font-face {
+  font-family: "Annabelle";
+  src: local("Annabelle"),   url(./fonts/Annabelle/AnnabelleJF.ttf) format("truetype");}
+</style>
