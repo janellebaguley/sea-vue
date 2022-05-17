@@ -18,7 +18,14 @@
           </v-row>
           <v-row class="mx-4">
             <v-col>
-              <v-text-field label="*E-mail" v-model='email' :rules='emailRules' required outlined dense />
+              <v-text-field
+                label="*E-mail"
+                v-model="email"
+                :rules="emailRules"
+                required
+                outlined
+                dense
+              />
             </v-col>
           </v-row>
           <v-row class="mx-4">
@@ -42,7 +49,11 @@
         <v-container>
           <v-row>
             <v-col>
-              <img />
+              <v-img
+                :src="require('@/../src/assets/family.jpg')"
+                alt="Mermaid Family"
+                max-height="110vh"
+              />
             </v-col>
           </v-row>
         </v-container>
@@ -68,9 +79,9 @@ export default {
     };
   },
   emailRules: [
-        v => !!v || 'E-mail is required',
-        v => /.+@.+\..+/.test(v) || 'E-mail must be valid',
-      ],
+    (v) => !!v || "E-mail is required",
+    (v) => /.+@.+\..+/.test(v) || "E-mail must be valid",
+  ],
   computed: {},
   watch: {},
   methods: {},

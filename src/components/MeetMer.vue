@@ -65,8 +65,8 @@
       </v-col>
     </v-row>
     <v-row class="mx-3 my-2">
-      <v-col>
-        <img alt="Luna" />
+      <v-col cols="3">
+        <v-img :src="require('@/../src/assets/maleficent.jpg')" alt='Luna'/>
       </v-col>
     </v-row>
     <v-row class="mx-1">
@@ -104,14 +104,14 @@
         </v-expansion-panels>
       </v-col>
     </v-row>
-    <v-row class="mx-3">
+    <v-row class="ma-0 pa-0 mx-3">
       <v-col>
         <h2 class="primary--text">Sea Punk Goddess Sapphire:</h2>
       </v-col>
     </v-row>
-    <v-row class="mx-3 my-2">
-      <v-col>
-        <img alt="Sapphire" />
+    <v-row class="ma-0 pa-0 mx-3">
+      <v-col cols="3">
+        <v-img :src="require('@/../src/assets/sapphire.jpg')" alt='Sapphire'/>
       </v-col>
     </v-row>
     <v-row class="mx-1">
@@ -244,6 +244,11 @@
     <v-row class="mx-3">
       <v-col>
         <h2 class="primary--text">Janelle Baguley:</h2>
+      </v-col>
+    </v-row>
+    <v-row class="ma-0 pa-0 mx-3">
+      <v-col cols="3">
+        <v-img :src="require('@/../src/assets/Janelle.jpg')" alt='Janelle'/>
       </v-col>
     </v-row>
     <v-row class="mx-1">

@@ -28,7 +28,7 @@
       </v-list-item>
       <v-divider></v-divider>
       <v-list>
-        <v-list-item 
+        <v-list-item
           v-for="(item, index) in activeItems"
           :key="index"
           :to="item.link"
@@ -95,7 +95,7 @@
         </v-row>
       </v-container>
     </v-main>
-    </v-app>
+  </v-app>
 </template>
 <script>
 //import permissions from "@/permissions";
@@ -107,9 +107,9 @@ export default {
       sidebarMenu: true,
       drawer: true,
       navLinks: [
-        {
-          title: "Home",
-          link: "/home",
+         {
+         title: "Home",
+         link: "/home",
         },
         {
           title: "MER-chandise",
@@ -195,10 +195,8 @@ export default {
 
 .v-input.dg-page-size {
   font-size: 14px !important;
-     font-family: "Annabelle";
+  font-family: "Annabelle";
 }
-
-
 
 .v-main__wrap {
   width: 100%;
@@ -211,44 +209,44 @@ export default {
 
 .v-list-item__title {
   align-self: center;
-  font-size: 1.0rem !important;
-     font-family: "Annabelle";
+  font-size: 1rem !important;
+  font-family: "Annabelle";
   margin-top: 2px !important;
 }
 h1 {
-     font-family: "Annabelle";
+  font-family: "Annabelle";
 }
 
 h2 {
-     font-family: "Annabelle";
+  font-family: "Annabelle";
 }
 
 h3 {
-     font-family: "Annabelle";
+  font-family: "Annabelle";
 }
 
 h4 {
-     font-family: "Annabelle";
+  font-family: "Annabelle";
 }
 h5 {
-     font-family: "Annabelle";
+  font-family: "Annabelle";
 }
 .theme--light.v-data-table > .v-data-table__wrapper > table > thead > tr > th {
   color: white !important;
   font-size: 0.85em;
-     font-family: "Annabelle";
+  font-family: "Annabelle";
 }
 
 html {
   font-size: 14px !important;
-     font-family: "Annabelle";
+  font-family: "Annabelle";
   text-rendering: opti mizeLegibility;
 }
 
 h1.dashtitle {
   color: #8627e0 !important;
   font-size: 1.75em;
-     font-family: "Annabelle";
+  font-family: "Annabelle";
 }
 
 .v-data-table-header tr {
@@ -390,13 +388,13 @@ h1.dashtitle {
 
 .topbar-text {
   font-size: 1rem;
-     font-family: "Annabelle";
+  font-family: "Annabelle";
   padding: 0;
 }
 
 .tiny {
   font-size: 0.7rem;
-     font-family: "Annabelle";
+  font-family: "Annabelle";
 }
 
 .v-toolbar__content {
@@ -421,7 +419,7 @@ div.no-gutters .footerlinks-wrapper {
   color: #ffffff;
   text-decoration: underline;
   font-size: 0.75rem;
-     font-family: "Annabelle";
+  font-family: "Annabelle";
 }
 
 .v-application a.footerlinks:hover {

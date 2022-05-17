@@ -14,9 +14,9 @@
     <v-card class="ma-4">
     <v-row class="mx-3">
       <v-col cols='3'>
-        <h2 class="secondary--text">Custom Orders Only</h2>
+        <h1 class="secondary--text"><b>Custom Orders Only</b></h1>
       </v-col>
-      <v-col class='mt-1'>
+      <v-col class='mt-2'>
         <h4 class="secondary--text">*Please Contact us for orders! The following items take 4-6 Weeks to create.</h4>
       </v-col>
       <v-col cols='2'>
