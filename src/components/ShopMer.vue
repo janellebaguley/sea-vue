@@ -67,29 +67,14 @@
             <v-expansion-panel>
               <v-expansion-panel-header
                 color="#EB5998"
-                class="white--text ma-0 pa-0"
+                class="white--text"
                 dense
               >
-                <template v-slot:default="{ open }">
-                  <v-row class="mx-1 mt-1">
+                  <v-row>
                     <v-col>
                       <h3 class="white--text">Description</h3>
                     </v-col>
-                    <v-col>
-                      <v-card-actions style="float: right">
-                        <span
-                          v-if="!open"
-                          key="0"
-                          class="overline text--disabled"
-                          ><h4 class="white--text">Show Details</h4></span
-                        >
-                        <span v-else key="1" class="overline text--disabled"
-                          ><h4 class="white--text">Hide Details</h4></span
-                        >
-                      </v-card-actions>
-                    </v-col>
                   </v-row>
-                </template>
               </v-expansion-panel-header>
               <v-expansion-panel-content>
                 <v-row class="mx-1 mt-2">
@@ -177,29 +162,14 @@
             <v-expansion-panel>
               <v-expansion-panel-header
                 color="#EB5998"
-                class="white--text ma-0 pa-0"
+                class="white--text"
                 dense
               >
-                <template v-slot:default="{ open }">
-                  <v-row class="mx-1 mt-1">
+                  <v-row>
                     <v-col>
                       <h3 class="white--text">Description</h3>
                     </v-col>
-                    <v-col>
-                      <v-card-actions style="float: right">
-                        <span
-                          v-if="!open"
-                          key="0"
-                          class="overline text--disabled"
-                          ><h4 class="white--text">Show Details</h4></span
-                        >
-                        <span v-else key="1" class="overline text--disabled"
-                          ><h4 class="white--text">Hide Details</h4></span
-                        >
-                      </v-card-actions>
-                    </v-col>
                   </v-row>
-                </template>
               </v-expansion-panel-header>
               <v-expansion-panel-content>
                 <v-row class="mx-1 mt-2">
@@ -282,29 +252,14 @@
             <v-expansion-panel>
               <v-expansion-panel-header
                 color="#EB5998"
-                class="white--text ma-0 pa-0"
+                class="white--text"
                 dense
               >
-                <template v-slot:default="{ open }">
-                  <v-row class="mx-1 mt-1">
+                  <v-row>
                     <v-col>
                       <h3 class="white--text">Description</h3>
                     </v-col>
-                    <v-col>
-                      <v-card-actions style="float: right">
-                        <span
-                          v-if="!open"
-                          key="0"
-                          class="overline text--disabled"
-                          ><h4 class="white--text">Show Details</h4></span
-                        >
-                        <span v-else key="1" class="overline text--disabled"
-                          ><h4 class="white--text">Hide Details</h4></span
-                        >
-                      </v-card-actions>
-                    </v-col>
                   </v-row>
-                </template>
               </v-expansion-panel-header>
               <v-expansion-panel-content>
                 <v-row class="mx-1 mt-2">
@@ -391,29 +346,14 @@
             <v-expansion-panel>
               <v-expansion-panel-header
                 color="#EB5998"
-                class="white--text ma-0 pa-0"
+                class="white--text"
                 dense
               >
-                <template v-slot:default="{ open }">
-                  <v-row class="mx-1 mt-1">
+                  <v-row>
                     <v-col>
                       <h3 class="white--text">Description</h3>
                     </v-col>
-                    <v-col>
-                      <v-card-actions style="float: right">
-                        <span
-                          v-if="!open"
-                          key="0"
-                          class="overline text--disabled"
-                          ><h4 class="white--text">Show Details</h4></span
-                        >
-                        <span v-else key="1" class="overline text--disabled"
-                          ><h4 class="white--text">Hide Details</h4></span
-                        >
-                      </v-card-actions>
-                    </v-col>
                   </v-row>
-                </template>
               </v-expansion-panel-header>
               <v-expansion-panel-content>
                 <v-row class="mx-1 mt-2">
@@ -474,29 +414,14 @@
             <v-expansion-panel>
               <v-expansion-panel-header
                 color="#EB5998"
-                class="white--text ma-0 pa-0"
+                class="white--text"
                 dense
               >
-                <template v-slot:default="{ open }">
-                  <v-row class="mx-1 mt-1">
+                  <v-row >
                     <v-col>
                       <h3 class="white--text">Description</h3>
                     </v-col>
-                    <v-col>
-                      <v-card-actions style="float: right">
-                        <span
-                          v-if="!open"
-                          key="0"
-                          class="overline text--disabled"
-                          ><h4 class="white--text">Show Details</h4></span
-                        >
-                        <span v-else key="1" class="overline text--disabled"
-                          ><h4 class="white--text">Hide Details</h4></span
-                        >
-                      </v-card-actions>
-                    </v-col>
                   </v-row>
-                </template>
               </v-expansion-panel-header>
               <v-expansion-panel-content>
                 <v-row class="mx-1 mt-2">
@@ -557,29 +482,14 @@
             <v-expansion-panel>
               <v-expansion-panel-header
                 color="#EB5998"
-                class="white--text ma-0 pa-0"
+                class="white--text"
                 dense
               >
-                <template v-slot:default="{ open }">
-                  <v-row class="mx-1 mt-1">
+                  <v-row>
                     <v-col>
                       <h3 class="white--text">Description</h3>
                     </v-col>
-                    <v-col>
-                      <v-card-actions style="float: right">
-                        <span
-                          v-if="!open"
-                          key="0"
-                          class="overline text--disabled"
-                          ><h4 class="white--text">Show Details</h4></span
-                        >
-                        <span v-else key="1" class="overline text--disabled"
-                          ><h4 class="white--text">Hide Details</h4></span
-                        >
-                      </v-card-actions>
-                    </v-col>
                   </v-row>
-                </template>
               </v-expansion-panel-header>
               <v-expansion-panel-content>
                 <v-row class="mx-1 mt-2">

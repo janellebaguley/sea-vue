@@ -27,8 +27,8 @@
         </v-btn>
       </v-list-item>
       <v-divider></v-divider>
-      <v-list dense>
-        <v-list-item
+      <v-list>
+        <v-list-item 
           v-for="(item, index) in activeItems"
           :key="index"
           :to="item.link"
@@ -213,6 +213,7 @@ export default {
   align-self: center;
   font-size: 1.0rem !important;
      font-family: "Annabelle";
+  margin-top: 2px !important;
 }
 h1 {
      font-family: "Annabelle";
