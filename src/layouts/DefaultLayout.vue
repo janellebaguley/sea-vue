@@ -225,12 +225,6 @@ h3 {
   font-family: "Annabelle";
 }
 
-h4 {
-  font-family: "Annabelle";
-}
-h5 {
-  font-family: "Annabelle";
-}
 .theme--light.v-data-table > .v-data-table__wrapper > table > thead > tr > th {
   color: white !important;
   font-size: 0.85em;
