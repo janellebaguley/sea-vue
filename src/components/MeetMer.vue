@@ -110,7 +110,7 @@
       </v-col>
     </v-row>
     <v-row class="ma-0 pa-0 mx-3">
-      <v-col cols="3">
+      <v-col cols="2">
         <v-img :src="require('@/../src/assets/sapphire.jpg')" alt='Sapphire'/>
       </v-col>
     </v-row>
@@ -128,7 +128,10 @@
             <v-expansion-panel-content>
               <v-row class="mx-1 my-2">
                 <v-col>
-                  <p></p>
+                  <p>
+                    Sapphire was born in 1880, near the Laguna Beach Tide pools. She is an artist and loves creating new things. Sapphire enjoys human watching. Her favorite sea creature is the Sea Horse. Sapphire and Calypso are sisters from different misters. Sometimes they live far away from each other, however Sapphire, Calypso and Luna all live in one happy cove together, now. 
+                    Sapphire is shy, but always has a smile for any new acquaintance. 
+                  </p>
                 </v-col>
               </v-row>
             </v-expansion-panel-content>
@@ -158,6 +161,11 @@
     <v-row class="mx-3">
       <v-col>
         <h2 class="primary--text">Lei Loni Figueroa:</h2>
+      </v-col>
+    </v-row>
+    <v-row class="ma-0 pa-0 mx-3">
+      <v-col cols="2">
+        <v-img :src="require('@/../src/assets/magic_hour.jpg')" alt='Lei Loni'/>
       </v-col>
     </v-row>
     <v-row class="mx-1">
@@ -206,6 +214,11 @@
         <h2 class="primary--text">Rachel Figueroa:</h2>
       </v-col>
     </v-row>
+    <v-row class="ma-0 pa-0 mx-3">
+      <v-col cols="2">
+        <v-img :src="require('@/../src/assets/Rachel.jpg')" alt='Rachel'/>
+      </v-col>
+    </v-row>
     <v-row class="mx-1">
       <v-col>
         <v-expansion-panels>
@@ -247,7 +260,7 @@
       </v-col>
     </v-row>
     <v-row class="ma-0 pa-0 mx-3">
-      <v-col cols="3">
+      <v-col cols="2">
         <v-img :src="require('@/../src/assets/Janelle.jpg')" alt='Janelle'/>
       </v-col>
     </v-row>
@@ -265,7 +278,12 @@
             <v-expansion-panel-content>
               <v-row class="mx-1 my-2">
                 <v-col>
-                  <p></p>
+                  <p>
+                    Janelle has a Bachelor of Fine Arts degree from Westminster College, emphasis in painting and drawing. She also has many years experience in sewing and pattern making. 
+                    She loves all things art, and thrives on sharing her gifts with others. 
+                    Janelle loves most furry creatures, but especially her kitties, Kuai and Baxter, her beloved furbabies. 
+                    Janelle moved to San Diego at the end of 2021 and has been happier then a clam to be in such a beautiful place. 
+                  </p>
                 </v-col>
               </v-row>
             </v-expansion-panel-content>

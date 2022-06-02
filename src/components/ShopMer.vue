@@ -223,7 +223,8 @@
           <v-container>
             <v-row class="mx-3">
               <v-col>
-                <img alt="Kraken" />
+                <v-img :src="require('@/../src/assets/kraken.jpg')" alt='Kraken'/>
+              
               </v-col>
             </v-row>
           </v-container>
@@ -313,11 +314,11 @@
         </v-col>
       </v-row>
       <v-row class="mx-3">
-        <v-col cols="3">
+        <v-col cols="4">
           <v-container>
             <v-row class="mx-3">
               <v-col>
-                <img alt="Standard Purse" />
+                <v-img :src="require('@/../src/assets/standard_purse.jpg')" alt='Standard Purse'/>
               </v-col>
             </v-row>
           </v-container>
@@ -359,7 +360,8 @@
                 <v-row class="mx-1 mt-2">
                   <v-col>
                     <p>
-                      These lovely purses are made from duck cloth, which allows
+                      **Please note these purses may not be available in the patterns shown on this site. Please contact us to inquire about pattern availability. 
+                      <br/><br/>These lovely purses are made from duck cloth, which allows
                       them to also be washable. The lining is also washable, I
                       would recommend laying them flat to dry, however. Each
                       purse is hand made by Sea Goddess Sapphire, with love.
@@ -381,11 +383,11 @@
         </v-col>
       </v-row>
       <v-row class="mx-3">
-        <v-col cols="3">
+        <v-col cols="4">
           <v-container>
             <v-row class="mx-3">
               <v-col>
-                <img alt="Small Purse" />
+                <v-img :src="require('@/../src/assets/small_purse.jpg')" alt='Small Purse'/>
               </v-col>
             </v-row>
           </v-container>
@@ -427,6 +429,8 @@
                 <v-row class="mx-1 mt-2">
                   <v-col>
                     <p>
+                      **Please note these purses may not be available in the patterns shown on this site. Please contact us to inquire about pattern availability. 
+                      <br/><br/>
                       These lovely purses are made from duck cloth, which allows
                       them to also be washable. The lining is also washable, I
                       would recommend laying them flat to dry, however. Each
@@ -442,7 +446,7 @@
         </v-col>
       </v-row>
     </v-card>
-    <v-card class="ma-4">
+   <!-- <v-card class="ma-4">
       <v-row class="mx-3">
         <v-col>
           <h2 class="primary--text">Sea Goddess Change Purse $15</h2>
@@ -458,7 +462,7 @@
             </v-row>
           </v-container>
         </v-col>
-        <!-- <v-col cols="4">
+        <v-col cols="4">
           <v-row class="mx-1">
             <v-col cols="4">
               <v-text-field
@@ -474,7 +478,7 @@
               >
             </v-col>
           </v-row>
-        </v-col> -->
+        </v-col>
       </v-row>
       <v-row>
         <v-col>
@@ -510,7 +514,7 @@
           </v-expansion-panels>
         </v-col>
       </v-row>
-    </v-card>
+    </v-card> -->
     <v-row class="mx-3">
       <v-col>
         <b
