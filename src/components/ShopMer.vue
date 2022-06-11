@@ -6,8 +6,8 @@
       </v-col>
       <v-col class='mr-3'>
         <v-card-actions style="float: right">
-          <v-btn color="secondary" @click='etsy'
-            >Etsy Orders</v-btn>
+          <v-btn color="secondary" @click='mercari'
+            >Mercari Orders</v-btn>
         </v-card-actions>
       </v-col>
     </v-row>
