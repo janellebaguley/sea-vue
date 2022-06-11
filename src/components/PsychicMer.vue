@@ -20,6 +20,11 @@
         </p>
       </v-col>
     </v-row>
+    <v-row class="ma-0 pa-0 mx-3">
+      <v-col cols="4">
+        <v-img :src="require('@/../src/assets/loni_psychic.jpg')" alt='Rachel'/>
+      </v-col>
+    </v-row>
   </v-card>
 </template>
 <script>

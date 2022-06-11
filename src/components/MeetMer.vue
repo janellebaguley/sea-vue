@@ -216,7 +216,7 @@
     </v-row>
     <v-row class="ma-0 pa-0 mx-3">
       <v-col cols="2">
-        <v-img :src="require('@/../src/assets/Rachel.jpg')" alt='Rachel'/>
+        <v-img :src="require('@/../src/assets/rach_max.jpeg')" alt='Rachel'/>
       </v-col>
     </v-row>
     <v-row class="mx-1">
