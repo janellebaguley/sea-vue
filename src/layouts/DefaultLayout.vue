@@ -1,93 +1,52 @@
 <template>
-  <v-app>
-    <vue-confirm-dialog></vue-confirm-dialog>
-    <v-navigation-drawer
-      v-model="sidebarMenu"
-      app
-      floating
-      color="#8627E0"
-      :mini-variant.sync="mini"
-      :permanent="sidebarMenu"
-      :width="290"
-    >
-      <v-list-item class="px-1">
-        <v-list-item-avatar rounded="0">
-          <img
-            @click.stop="mini = !mini"
+ <v-app>
+    <v-card style='height:120px;' color='#8627E0'>
+      <v-row class='mx-1'>
+        <v-col cols=''>
+          <v-container>
+              <img
             src="@/../src/assets/oshun.jpeg"
+            height='100px'
             alt="Logo"
             style="cursor: pointer"
           />
-        </v-list-item-avatar>
-        <v-list-item-title>
-          <h3 style="color: #ffffff">The Sea Goddess Grotto</h3>
-        </v-list-item-title>
-        <v-btn icon @click.stop="mini = !mini">
-          <v-icon color="white">mdi-chevron-left</v-icon>
-        </v-btn>
-      </v-list-item>
-      <v-divider></v-divider>
-      <v-list>
-        <v-list-item
-          v-for="(item, index) in activeItems"
-          :key="index"
-          :to="item.link"
-          :href="item.href"
-          :target="item.target"
-          @click="eventTrigger(item.click)"
-        >
-          <v-list-item-icon>
-            <v-icon>{{ item.icon }}</v-icon>
-          </v-list-item-icon>
-          <v-list-item-title
-            ><span>{{ item.title }}</span></v-list-item-title
-          >
-        </v-list-item>
-      </v-list>
-      <v-list v-for="navLink in navLinks" :key="navLink.title" dense dark>
-        <v-list-group no-action v-if="navLink.subLinks" class="nav-sublink">
-          <v-list-item
-            slot="activator"
-            :to="navLink.link"
-            :href="navLink.href"
-            :target="navLink.target"
-            @click="eventTrigger(navLink.click)"
-          >
-            <v-list-item-icon>
-              <v-icon>{{ navLink.icon }}</v-icon>
-            </v-list-item-icon>
-            <v-list-item-title>{{ navLink.title }}</v-list-item-title>
-          </v-list-item>
-          <v-list-item
-            v-for="sub in navLink.subLinks"
-            :key="sub.title"
-            :to="sub.link"
-            :href="navLink.href"
-            :target="sub.target"
-          >
-            <v-list-item-title>{{ sub.title }}</v-list-item-title>
-          </v-list-item>
-        </v-list-group>
-        <v-list-item
-          v-else
-          :to="navLink.link"
-          :href="navLink.href"
-          :target="navLink.target"
-          @click="eventTrigger(navLink.click)"
-        >
-          <v-list-item-icon>
-            <v-icon>{{ navLink.icon }}</v-icon>
-          </v-list-item-icon>
-          <v-list-item-title>{{ navLink.title }}</v-list-item-title>
-        </v-list-item>
-      </v-list>
-    </v-navigation-drawer>
-    <v-main>
+          </v-container>
+        </v-col>
+        <v-col class='mx-1 mt-16' cols='3'>
+          <h2 style="color: #ffffff">The Sea Goddess Grotto</h2>
+        </v-col>
+        <v-col class='ml-2 mt-16'>
+          <v-btn class='ma-0 pa-0' color='white' @click='home' text dense> Home</v-btn>
+        </v-col>
+        <v-col class='mt-16'>
+          <v-btn class='ma-0 pa-0' color='white' @click='merchandise' text dense> Mer-chandise</v-btn>
+        </v-col>
+        <v-col class='mt-16'>
+          <v-btn class='ma-0 pa-0' color='white' @click='performance' text dense> Performances and Events</v-btn>
+        </v-col>
+        <v-col class='mt-16'>
+          <v-btn class='ma-0 pa-0' color='white' @click='meet' text dense> Meet Mer</v-btn>
+        </v-col>
+        <v-col class='mt-16'>
+          <v-btn class='ma-0 pa-0' color='white' @click='psychic' text dense> Psychic</v-btn>
+        </v-col>
+        <v-col class='mt-16'>
+          <v-btn class='ma-0 pa-0' color='white' @click='gallery' text dense>Gallery</v-btn>
+        </v-col>
+        <v-col class='mt-16'>
+          <v-btn class='ma-0 pa-0' color='white' @click='contact' text dense>Contact Us</v-btn>
+        </v-col>
+        <v-col class='mt-16'>
+          <v-btn class='ma-0 pa-0' color='white' @click='faq' text dense>FAQ</v-btn>
+        </v-col>
+      </v-row>
+    </v-card>
+    <v-main >
       <v-container id="con">
         <v-row class="fill-height">
           <v-col>
             <transition name="fade">
-              <keep-alive include="users">
+              <keep-alive include="">
                 <router-view :key="$route.fullPath"></router-view>
               </keep-alive>
             </transition>
@@ -98,90 +57,62 @@
   </v-app>
 </template>
 <script>
-//import permissions from "@/permissions";
-// import { mapState } from "vuex";
+import Vue from "vue";
+import VueRouter from "vue-router";
+Vue.use(VueRouter);
 export default {
   data() {
     return {
-      loggedin: true,
-      sidebarMenu: true,
-      drawer: true,
-      navLinks: [
-         {
-         title: "Home",
-         link: "/home",
-        },
-        {
-          title: "MER-chandise",
-          link: "/shop",
-        },
-        {
-          title: "Performances and Events",
-          link: "/events",
-        },
-        {
-          title: "Meet the Mermaids",
-          link: "/meet",
-        },
-        {
-          title: "Psychic",
-          link: "/psychic",
-        },
-        {
-          title: "Gallery",
-          link: "/gallery",
-        },
-        {
-          title: "Contact",
-          link: "/contact",
-        },
-        {
-          title: "Frequently Asked Questions",
-          link: "/faq",
-        },
-      ],
-      currentTime: new Date().toLocaleDateString("en-US", {
-        weekday: "short",
-        year: "numeric",
-        month: "short",
-        day: "numeric",
-      }),
-      selectedLocale: "EN",
-      loading2: false,
-      items2: [],
-      search: null,
-      select: null,
-      states: [],
-      mini: true,
-    };
+    }
   },
-  created() {},
-  mounted() {},
-  destroy() {
-    clearInterval(this.timerId);
-  },
+  
   computed: {
-    activeItems: function () {
-      return this.items;
-    },
   },
   watch: {
-    $route() {
-      this.loggedin = this.userIsAuthenticated();
-    },
   },
   methods: {
-    userIsAuthenticated() {
-      let isAuthenticated = false;
-      if (localStorage.getItem("user")) isAuthenticated = true;
-      return isAuthenticated;
+    
+    home(){
+      this.$router.push({
+        name: "HomeBase",
+      });
     },
-    eventTrigger(name) {
-      if (name && name != "") {
-        this[name]();
-      }
+     merchandise(){
+      this.$router.push({
+        name: "ShopMer",
+      });
     },
-  },
+     performance(){
+      this.$router.push({
+        name: "EventsPricing",
+      });
+    },
+    meet(){
+      this.$router.push({
+        name: "MeetMer",
+      });
+    },
+   psychic(){
+      this.$router.push({
+        name: "PsychicMer",
+      });
+    },
+     gallery(){
+      this.$router.push({
+        name: "GalleryMer",
+      });
+    },
+       contact(){
+      this.$router.push({
+        name: "ContactEmail",
+      });
+    },
+    faq(){
+      this.$router.push({
+        name: "FrequentlyAsked",
+      });
+    },
+  }
 };
 </script>
 <style>
@@ -455,3 +386,101 @@ div.no-gutters .footerlinks-wrapper {
 
 /* mac hack to fix overlay issue END */
 </style>
+
+ <!-- <v-app>
+    <vue-confirm-dialog></vue-confirm-dialog>
+    <v-navigation-drawer
+      v-model="sidebarMenu"
+      app
+      floating
+      color="#8627E0"
+      :mini-variant.sync="mini"
+      :permanent="sidebarMenu"
+      :width="290"
+    >
+      <v-list-item class="px-1">
+        <v-list-item-avatar rounded="0">
+          <img
+            @click.stop="mini = !mini"
+            src="@/../src/assets/oshun.jpeg"
+            alt="Logo"
+            style="cursor: pointer"
+          />
+        </v-list-item-avatar>
+        <v-list-item-title>
+          <h3 style="color: #ffffff">The Sea Goddess Grotto</h3>
+        </v-list-item-title>
+        <v-btn icon @click.stop="mini = !mini">
+          <v-icon color="white">mdi-chevron-left</v-icon>
+        </v-btn>
+      </v-list-item>
+      <v-divider></v-divider>
+      <v-list>
+        <v-list-item
+          v-for="(item, index) in activeItems"
+          :key="index"
+          :to="item.link"
+          :href="item.href"
+          :target="item.target"
+          @click="eventTrigger(item.click)"
+        >
+          <v-list-item-icon>
+            <v-icon>{{ item.icon }}</v-icon>
+          </v-list-item-icon>
+          <v-list-item-title
+            ><span>{{ item.title }}</span></v-list-item-title
+          >
+        </v-list-item>
+      </v-list>
+      <v-list v-for="navLink in navLinks" :key="navLink.title" dense dark>
+        <v-list-group no-action v-if="navLink.subLinks" class="nav-sublink">
+          <v-list-item
+            slot="activator"
+            :to="navLink.link"
+            :href="navLink.href"
+            :target="navLink.target"
+            @click="eventTrigger(navLink.click)"
+          >
+            <v-list-item-icon>
+              <v-icon>{{ navLink.icon }}</v-icon>
+            </v-list-item-icon>
+            <v-list-item-title>{{ navLink.title }}</v-list-item-title>
+          </v-list-item>
+          <v-list-item
+            v-for="sub in navLink.subLinks"
+            :key="sub.title"
+            :to="sub.link"
+            :href="navLink.href"
+            :target="sub.target"
+          >
+            <v-list-item-title>{{ sub.title }}</v-list-item-title>
+          </v-list-item>
+        </v-list-group>
+        <v-list-item
+          v-else
+          :to="navLink.link"
+          :href="navLink.href"
+          :target="navLink.target"
+          @click="eventTrigger(navLink.click)"
+        >
+          <v-list-item-icon>
+            <v-icon>{{ navLink.icon }}</v-icon>
+          </v-list-item-icon>
+          <v-list-item-title>{{ navLink.title }}</v-list-item-title>
+        </v-list-item>
+      </v-list>
+    </v-navigation-drawer>
+    <v-main>
+      <v-container id="con">
+        <v-row class="fill-height">
+          <v-col>
+            <transition name="fade">
+              <keep-alive include="users">
+                <router-view :key="$route.fullPath"></router-view>
+              </keep-alive>
+            </transition>
+          </v-col>
+        </v-row>
+      </v-container>
+    </v-main>
+  </v-app> -->

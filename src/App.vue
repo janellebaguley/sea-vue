@@ -12,7 +12,7 @@
         },
         computed: {
             layout() {
-                if (this.$route.path === '/') {
+                if (this.$route.path === '/homebase') {
                     return LayoutBlank;
                 } else {
                     return LayoutDefault

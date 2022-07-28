@@ -32,11 +32,6 @@ export default new Router({
     routes: [
         {
             path: '/',
-            name: 'DefaultLayout',
-            component: DefaultLayout,
-        },
-        {
-            path: '/home',
             name: 'HomeBase',
             component: HomeBase,
         },
