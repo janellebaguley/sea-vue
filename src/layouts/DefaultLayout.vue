@@ -1,12 +1,12 @@
 <template>
  <v-app>
-    <v-card style='height:120px;' color='#8627E0'>
+    <v-card style='height:100px;' color='#8627E0'>
       <v-row class='mx-1'>
         <v-col cols=''>
           <v-container>
               <img
             src="@/../src/assets/oshun.jpeg"
-            height='100px'
+            height='80px'
             alt="Logo"
             style="cursor: pointer"
           />
